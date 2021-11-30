@@ -1,0 +1,10 @@
+.DS_Store
+
+#----------------
+# movie files
+*.mp4
+*.cmproj
+
+#----------------
+# xcode project files
+cmake-build-debug/*
