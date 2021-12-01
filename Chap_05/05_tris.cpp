@@ -8,6 +8,7 @@
 //                - tri par sélection
 // Remarque(s) : NILL
 // ------------------------------------------------------------------------------
+
 #include <cstdlib>
 #include <iostream>
 #include <vector>
@@ -76,7 +77,7 @@ int main() {
    test(PART_CROISSANT, selectionSort, coutVecteur);
 
    cout << endl << "grand tableau " << endl;
-   vecteur TRES_GRAND(10'000);
+   vecteur TRES_GRAND(100'000);
    generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
 
    test(TRES_GRAND,     bubbleSort1,   coutVecteur);
