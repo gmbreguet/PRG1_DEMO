@@ -2,7 +2,7 @@
 // Fichier     : 05_tris.cpp
 // Auteur(s)   : BREGUET Guy-Michel
 // Date        : 2021-12-01
-// But         : démontrer les tris de bases
+// But         : démontrer les tris de base
 //                - tri à bulles
 //                - tri par insertions
 //                - tri par sélection
