@@ -26,6 +26,7 @@ using uintll  = unsigned long long;
 ostream& operator<<(ostream& os, const vecteur& v);
 int generateur();
 
+// implémentation des algorithmes de tri
 uintll bubbleSort1(vecteur& v);
 uintll bubbleSort2(vecteur& v);
 uintll insertSort(vecteur& v);
