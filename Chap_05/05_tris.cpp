@@ -166,14 +166,14 @@ void test(vecteur v,
           uintll  (*fct)(vecteur&),
           bool    coutVecteur) {
 
-   const int     W               = 4;  // setw(W) affectations
+   const int W = 4;  // setw(W) affectations
 
    if (coutVecteur) {
       cout << endl;
       cout << "avant : " << v << endl;
    }
 
-   unsigned long cpt = fct(v);
+   uintll cpt = fct(v);
 
    if (coutVecteur) {
       cout << "apres : " << v << endl;
