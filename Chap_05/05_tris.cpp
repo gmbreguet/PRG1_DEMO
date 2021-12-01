@@ -49,7 +49,7 @@ int main() {
    const vecteur RANDOM          = {9, 5, 2, 6, 7, 3, 4, 1, 8};
    const vecteur CROISSANT       = {1, 2, 3, 4, 5, 6, 7, 8, 9};
    const vecteur DECROISSANT     = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-   const vecteur PART_CROISSANT  = {9, 8, 7, 6, 1, 2, 3, 4, 5};
+   const vecteur PART_CROISSANT  = {6, 7, 8, 9, 1, 2, 3, 4, 5};
 
    // test des tri
    cout << endl << "tri à bulles " << endl;
