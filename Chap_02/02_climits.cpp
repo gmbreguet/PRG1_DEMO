@@ -1,12 +1,11 @@
-/*
- ------------------------------------------------------------------------------
- Fichier       : 02-03_climits.cpp
- Auteur(s)     : BREGUET Guy-Michel
- Date          : 2021-10-01
- But           : Utilisation de climnits et débordements
- Remarque(s)   : NILL
- ------------------------------------------------------------------------------
-*/
+//---------------------------------------------------------
+// Fichier        : 02_climits.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-10-01
+// But            : Utilisation de climnits et débordements
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>

@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+// Fichier        : 02_numerics_limits_reels.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-10-01
+// But            : Utilisation de numeric_limits
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>   // EXIT_SUCCESS
 #include <iostream>  // cout et cin
 #include <limits>    // numeric_limits<streamsize>

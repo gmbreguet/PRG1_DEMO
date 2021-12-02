@@ -1,15 +1,12 @@
-/* Fichier : main.cpp
- * Auteur  : Guy-Michel Breguet / HEIG-VD
- * Date    : 05.11.2020
- *
- * But     : exemple d'utilisation d'une
- *           librairie personnelle
- *
- * Remarque(s) :
- *
- * Modifications : Date / Auteur / Raison
- *
- */
+//---------------------------------------------------------
+// Fichier        : 04_librairie
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-09-15
+// But            : exemple d'utilisation d'une
+//                  librairie personnelle
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <cstdlib>
 #include <iostream>

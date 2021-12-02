@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+// Fichier        : 05_vector_size_vs_capacity.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : démontrer l'évolution de size et capacity
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>
 #include <iostream>
 #include <vector>

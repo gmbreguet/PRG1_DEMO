@@ -1,14 +1,11 @@
-/* Fichier : annexes.cpp (le corps de sous-programmes du .h)
- * Auteur  : Guy-Michel Breguet / HEIG-VD
- * Date    : 05.11.2020
- *
- * But     : ne contient que les définitions
- *
- * Remarque(s) :
- *
- * Modifications : Date / Auteur / Raison
- *
- */
+//---------------------------------------------------------
+// Fichier        : annexes.cpp (le corps de sous-programmes du .h)
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-09-15
+// But            : ne contient que les définitions
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include "annexe.h"    // inclure la spec de ce .cpp

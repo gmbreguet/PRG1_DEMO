@@ -1,3 +1,13 @@
+//---------------------------------------------------------
+// Fichier        : 04_constexpr.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-09-15
+// But            : exemple d'utilisation de constexpr
+//                  avec correction du flux
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>
 #include <iostream>
 using namespace std;

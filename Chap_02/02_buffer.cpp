@@ -1,12 +1,11 @@
-/*
- ------------------------------------------------------------------------------
- Fichier       : 02-09_buffer.cpp
- Auteur(s)     : BREGUET Guy-Michel
- Date          : 2021-10-07
- But           : monter les caractères saisis et ce qui reste dans le buffer
- Remarque(s)   : NILL
- ------------------------------------------------------------------------------
-*/
+//---------------------------------------------------------
+// Fichier        : 02_buffer.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-10-07
+// But            : démontrer l'évuation du buffer de saisie
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>

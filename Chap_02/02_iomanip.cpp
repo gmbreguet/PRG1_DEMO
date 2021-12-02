@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+// Fichier        : 02_iomanip.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-10-01
+// But            : Utilisation de iomanip
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>   // EXIT_SUCCESS
 #include <iostream>  // cout et cin
 #include <limits>    // numeric_limits<streamsize>

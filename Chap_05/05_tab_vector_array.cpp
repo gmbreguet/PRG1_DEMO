@@ -1,21 +1,14 @@
-/*
- --------------------------------------------------------------------
- Laboratoire : demo en classe
- Fichier     : main.cpp
- Auteur(s)   : BREGUET Guy-Michel
- Date        : 2012-12-04 - version initiale
- Date        : 2020-11-30 - mise à jour
-
- But         : démontrer l'utilisation des différents tableaux C++11
-               - tableau C (sans réservations dynamiques)
-               - array     à 1 ou 2 dimensions
-               - vector    à 1 ou 2 dimensions
-
- Remarque(s) : NILL
-
- Compilateur : MinGW-g++ 4.6.2
- --------------------------------------------------------------------
-*/
+//---------------------------------------------------------
+// Fichier        : 05_tab_vector_array.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : démontrer l'utilisation des différents tableaux C++11
+//                  - tableau C (sans réservations dynamiques)
+//                  - array     à 1 ou 2 dimensions
+//                  - vector    à 1 ou 2 dimensions
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <cstdlib>
 #include <iostream>

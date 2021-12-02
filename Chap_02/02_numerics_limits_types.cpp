@@ -1,12 +1,12 @@
-/*
- ------------------------------------------------------------------------------
- Fichier       : 02-03_climits.cpp
- Auteur(s)     : BREGUET Guy-Michel
- Date          : 2020-09-15
- But           : utilisation de numerics_limits<type>::xx
- Remarque(s)   : NILL
- ------------------------------------------------------------------------------
-*/
+//---------------------------------------------------------
+// Fichier        : 02_numerics_limits_types.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-09-15
+// But            : Utilisation de numeric_limits
+//                  avec différents types de données
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>

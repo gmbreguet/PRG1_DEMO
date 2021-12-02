@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+// Fichier        : 03_boucle_saisie.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-09-15
+// But            : exemple de boucle de saisie
+//                  avec correction du flux
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>
