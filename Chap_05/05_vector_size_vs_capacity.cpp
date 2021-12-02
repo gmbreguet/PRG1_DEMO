@@ -9,6 +9,7 @@
 
 #include <cstdlib>
 #include <iostream>
+#include <string>
 #include <vector>
 #include <string>
 #include <iomanip>
@@ -16,16 +17,20 @@
 using namespace std;
 
 //---------------------------------------------------------
-void putHeader(const string& ACTION, int MARGE);
+using Vect = vector<int>;
+
+//---------------------------------------------------------
+void putHeader (const string& ACTION, int MARGE);
+void putDetails(const Vect& v, const string& msg);
+
+//---------------------------------------------------------
+const int MARGE   =      17;
+const int STEP    =  10'000;
+const int MAX     = 100'000;
 
 //---------------------------------------------------------
 int main() {
 
-   const int MARGE   =      17;
-   const int STEP    =  10'000;
-   const int MAX     = 100'000;
-
-   using Vect = vector<int>;
    Vect  v;
 
    //---------------------------------------------------------
@@ -37,58 +42,19 @@ int main() {
 
    //---------------------------------------------------------
    putHeader("RESIZE", MARGE);
-   v.resize(100);
-   cout  << setw(MARGE) << left  << "v(100)"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-   
-   v.resize(10'000);
-   cout  << setw(MARGE) << left  << "v.resize(1000)"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-   
-   v.resize(10);
-   cout  << setw(MARGE) << left  << "v.resize(10)"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-   
+   v.resize(100);          putDetails(v, "v(100)");
+   v.resize(10'000);       putDetails(v, "v.resize(1000)");
+   v.resize(10);           putDetails(v, "v.resize(10)");
+
 
    //---------------------------------------------------------
    putHeader("CAPACITY", MARGE);
    v.reserve(10);
-   v.shrink_to_fit();
-   cout  << setw(MARGE) << left  << "v.reserve(10)"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-   
-   v.reserve(1000);
-   cout  << setw(MARGE) << left  << "v.reserve(1000)"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-   
-   v.reserve(10);
-   cout  << setw(MARGE) << left  << "v.reserve(10)"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-   
-   v.resize(10);
-   cout  << setw(MARGE) << left  << "v.resize(10)"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-   
-   v.shrink_to_fit();
-   cout  << setw(MARGE) << left  << "v.shrink_to_fit()"
-         << setw(MARGE) << right << v.size()
-         << setw(MARGE) << right << v.capacity()
-         << endl;
-
+   v.shrink_to_fit();      putDetails(v, "v.reserve(10)");
+   v.reserve(1000);        putDetails(v, "v.reserve(1000)");
+   v.reserve(10);          putDetails(v, "v.reserve(10)");
+   v.resize(10);           putDetails(v, "v.resize(10)");
+   v.shrink_to_fit();      putDetails(v, "v.shrink_to_fit()");
 
    //---------------------------------------------------------
    putHeader("PUSH_BACK", MARGE);
@@ -99,10 +65,7 @@ int main() {
 
       // affichage stats
       if (i % STEP == 0)
-         cout  << setw(MARGE) << right << i
-               << setw(MARGE) << right << v.size()
-               << setw(MARGE) << right << v.capacity()
-               << endl;
+         putDetails(v, "push_back ... " + to_string(i));
    }
    
 
@@ -111,10 +74,7 @@ int main() {
    for (int i=MAX; i>=0; --i) {
       // affichage stats
       if (i % STEP == 0)
-         cout  << setw(MARGE) << right << i
-               << setw(MARGE) << right << v.size()
-               << setw(MARGE) << right << v.capacity()
-               << endl;
+         putDetails(v, "pop_back ... " + to_string(i));
 
       v.pop_back();
    }
@@ -130,4 +90,12 @@ void putHeader(const string& ACTION, int MARGE) {
          << setw(MARGE) << right << "TAILLE"
          << setw(MARGE) << right << "CAPACITY"                       << endl
          << "-----------------------------------------------------"  << endl;
+}
+
+//---------------------------------------------------------
+void putDetails(const Vect& v, const string& msg) {
+   cout  << setw(MARGE) << left  << msg
+         << setw(MARGE) << right << v.size()
+         << setw(MARGE) << right << v.capacity()
+         << endl;
 }
