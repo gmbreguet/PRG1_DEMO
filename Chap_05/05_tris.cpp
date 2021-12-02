@@ -1,12 +1,14 @@
 // ------------------------------------------------------------------------------
-// Fichier     : 05_tris.cpp
-// Auteur(s)   : BREGUET Guy-Michel
-// Date        : 2021-12-01
-// But         : démontrer les tris de base
-//                - tri à bulles
-//                - tri par insertions
-//                - tri par sélection
-// Remarque(s) : NILL
+// Fichier        : 05_tris.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-01
+// But            : démontrer les tris de base
+//                   - tri à bulles
+//                   - tri par insertions
+//                   - tri par sélection
+// Modifications  : 2021-12-02 GMB
+//                   - utislisaiton de la librairie algorithm
+// Remarque(s)    : NILL
 // ------------------------------------------------------------------------------
 
 #include <cstdlib>
@@ -21,19 +23,24 @@
 using namespace std;
 
 //---------------------------------------------------------
+// types de données
 using vecteur = vector<int>;
 using uintll  = unsigned long long;
+
 //---------------------------------------------------------
-
+// fonctions auxiliaires
 ostream& operator<<(ostream& os, const vecteur& v);
-int generateur();
+int  generateur();
+bool trier (vecteur::iterator itL, vecteur::iterator itR);
 
+//---------------------------------------------------------
 // implémentation des algorithmes de tri
 uintll bubbleSort1  (vecteur& v);
 uintll bubbleSort2  (vecteur& v);
 uintll insertSort   (vecteur& v);
 uintll selectionSort(vecteur& v);
 
+//---------------------------------------------------------
 // vecteur reçu en copie volontairment
 // ptr de fonction => action à faire sur le tableau
 void test(vecteur v,                      // vecteur par copie
@@ -48,11 +55,11 @@ int main() {
    const bool    coutVecteur     = false;
 
    // vecteurs de travail
-   const vecteur VIDE;
-   const vecteur RANDOM          = {9, 5, 2, 6, 7, 3, 4, 1, 8};
-   const vecteur CROISSANT       = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-   const vecteur DECROISSANT     = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-   const vecteur PART_CROISSANT  = {6, 7, 8, 9, 1, 2, 3, 4, 5};
+   vecteur VIDE;
+   vecteur RANDOM          = {9, 5, 2, 6, 7, 3, 4, 1, 8};
+   vecteur CROISSANT       = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+   vecteur DECROISSANT     = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+   vecteur PART_CROISSANT  = {6, 7, 8, 9, 1, 2, 3, 4, 5};
 
    // test des tri
    cout << endl << "tri à bulles" << endl;
@@ -83,8 +90,9 @@ int main() {
    test(DECROISSANT,    selectionSort, "permutations", coutVecteur);
    test(PART_CROISSANT, selectionSort, "permutations", coutVecteur);
 
+   // création d'un grand tableau de valeurs aléatoires (algorithm)
    cout << endl << "grands tableaux" << endl;
-   vecteur TRES_GRAND(100'000);
+   vecteur TRES_GRAND(10'000);
    generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
 
    test(TRES_GRAND,     bubbleSort1);
@@ -92,8 +100,9 @@ int main() {
    test(TRES_GRAND,     insertSort);
    test(TRES_GRAND,     selectionSort);
 
-   // avec la librairie algorithm
+   // vecteur de vecteurs et utilisation de for_each pour le tri (algorithm)
    cout << "debut ... ";
+   vector<vecteur> TABS = {VIDE, RANDOM, CROISSANT, DECROISSANT, PART_CROISSANT, TRES_GRAND};
    sort(TRES_GRAND.begin(), TRES_GRAND.end());
    cout << "fin" << endl;
 
@@ -238,4 +247,9 @@ int generateur() {
 
    // generation d'une valeur aléatoire
    return rand() % numeric_limits<int>::max();
+}
+
+//---------------------------------------------------------
+bool trier (vecteur::iterator itL, vecteur::iterator itR) {
+   return *itL < *itR;
 }
