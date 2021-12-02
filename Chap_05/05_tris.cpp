@@ -36,7 +36,7 @@ uintll selectionSort(vecteur& v);
 // vecteur reçu en copie volontairment
 // ptr de fonction => action à faire sur le tableau
 void test(vecteur v,                      // vecteur par copie
-          uintll  (*fct)(vecteur&),       // tri à faire sur la tableau
+          uintll  (*fct) (vecteur&),      // tri à faire sur la tableau
           bool    coutVecteur = true);    // afficher vecteur? => false/true
 
 //---------------------------------------------------------
@@ -164,7 +164,7 @@ uintll selectionSort(vector<int>& v) {
 
 //---------------------------------------------------------
 void test(vecteur v,
-          uintll  (*fct)(vecteur&),
+          uintll  (*fct) (vecteur&),
           bool    coutVecteur) {
 
    const int W = 4;  // setw(W) affectations
