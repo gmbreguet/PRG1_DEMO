@@ -76,6 +76,7 @@ int main() {
 
    //---------------------------------------------------------
    putHeader("PUSH_BACK", MARGE);
+   v.resize(0);
    for (int i=1; i<=MAX; ++i) {
       v.push_back(i);
 
