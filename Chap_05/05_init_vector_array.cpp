@@ -1,5 +1,5 @@
 //---------------------------------------------------------
-// Fichier        : 05_vector_array_init.cpp
+// Fichier        : 05_init_vector_array.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2020-11-30
 // But            : démontrer les initialisations possibles de vector et array
