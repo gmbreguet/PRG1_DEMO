@@ -43,7 +43,7 @@ void test(vecteur v,                      // vecteur par copie
 int main() {
 
    // vecteurs de travail
-   const bool    coutVecteur     = false;
+   const bool    coutVecteur     = true;
 
    // vecteurs de travail
    const vecteur RANDOM          = {9, 5, 2, 6, 7, 3, 4, 1, 8};
@@ -76,14 +76,14 @@ int main() {
    test(DECROISSANT,    selectionSort, coutVecteur);
    test(PART_CROISSANT, selectionSort, coutVecteur);
 
-   cout << endl << "grand tableau " << endl;
-   vecteur TRES_GRAND(10'000);
-   generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
-
-   test(TRES_GRAND,     bubbleSort1,   coutVecteur);
-   test(TRES_GRAND,     bubbleSort2,   coutVecteur);
-   test(TRES_GRAND,     insertSort,    coutVecteur);
-   test(TRES_GRAND,     selectionSort, coutVecteur);
+//   cout << endl << "grand tableau " << endl;
+//   vecteur TRES_GRAND(10'000);
+//   generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
+//
+//   test(TRES_GRAND,     bubbleSort1,   coutVecteur);
+//   test(TRES_GRAND,     bubbleSort2,   coutVecteur);
+//   test(TRES_GRAND,     insertSort,    coutVecteur);
+//   test(TRES_GRAND,     selectionSort, coutVecteur);
 
    return EXIT_SUCCESS;
 }
