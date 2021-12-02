@@ -21,9 +21,9 @@ void putHeader(const string& ACTION, int MARGE);
 //---------------------------------------------------------
 int main() {
 
-   const int MARGE   =     17;
-   const int STEP    =  10000;
-   const int MAX     = 100000;
+   const int MARGE   =      17;
+   const int STEP    =  10'000;
+   const int MAX     = 100'000;
 
    using Vect = vector<int>;
    Vect  v;
@@ -43,7 +43,7 @@ int main() {
          << setw(MARGE) << right << v.capacity()
          << endl;
    
-   v.resize(10000);
+   v.resize(10'000);
    cout  << setw(MARGE) << left  << "v.resize(1000)"
          << setw(MARGE) << right << v.size()
          << setw(MARGE) << right << v.capacity()
@@ -93,6 +93,7 @@ int main() {
    //---------------------------------------------------------
    putHeader("PUSH_BACK", MARGE);
    v.resize(0);
+   v.shrink_to_fit();
    for (int i=1; i<=MAX; ++i) {
       v.push_back(i);
 
