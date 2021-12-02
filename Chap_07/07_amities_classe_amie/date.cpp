@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+// Fichier        : date.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : implémentation de la classe date
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include "date.h"
 
 #include <iostream>

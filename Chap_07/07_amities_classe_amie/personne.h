@@ -1,3 +1,13 @@
+//---------------------------------------------------------
+// Fichier        : personne.h
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : classe personne ...
+//                  et utilisation de la clase date
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #ifndef Personne_H
 #define Personne_H
 

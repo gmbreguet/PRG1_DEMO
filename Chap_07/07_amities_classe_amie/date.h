@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+// Fichier        : date.h
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : classe date
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #ifndef Date_H
 #define Date_H
 

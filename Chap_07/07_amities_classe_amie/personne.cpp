@@ -1,3 +1,12 @@
+//---------------------------------------------------------
+// Fichier        : personne.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : implémentation de la classe personne
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include "personne.h"
 #include <iostream>
 
