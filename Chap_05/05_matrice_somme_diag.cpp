@@ -83,12 +83,12 @@ bool sommesElementsDiagonaux(const Matrice& matrice,
 //---------------------------------------------------------
 void test(const Matrice& m) {
    int sommeDG = 0,
-       sommeDD = 0;
+       sommeGD = 0;
    cout << m << endl;
-   const bool carree = sommesElementsDiagonaux(m, sommeDG, sommeDD);
+   const bool carree = sommesElementsDiagonaux(m, sommeDG, sommeGD);
    if (carree) {
       cout << "somme DG : " << sommeDG << endl;
-      cout << "somme DG : " << sommeDG << endl;
+      cout << "somme GD : " << sommeGD << endl;
    }
    else
       cout << "/!\\ la matrie n'est pas carrée" << endl;
