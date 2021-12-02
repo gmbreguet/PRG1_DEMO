@@ -18,7 +18,7 @@ using namespace std;
 //---------------------------------------------------------
 using Vecteur1D = vector<int>;
 using Vecteur2D = vector<Vecteur1D>;
-// https://www.cplusplus.com/reference/vector/vector/vector/
+// https://www.cplusplus.com/reference/vector/vector/vector
 
 //---------------------------------------------------------
 using Array1D   = array<int,3>;
