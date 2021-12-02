@@ -43,7 +43,7 @@ int main() {
    //------------------------------------------------------
    Vecteur1D v1a;                               // []
    Vecteur1D v1b();                             // /!\ => déclaration d'une fonction
-   Vecteur1D v1c(5);                            // [0, 0, 0]   => constructeur
+   Vecteur1D v1c(3);                            // [0, 0, 0]   => constructeur
    Vecteur1D v1d(3, 2);                         // [2, 2, 2]   => constructeur
    Vecteur1D v1e{1, 2, 3};                      // [1, 2, 3]   => liste d'initialisation
    Vecteur1D v1f = {1, 2, 3};                   // [1, 2, 3]   => par agrégat
@@ -60,7 +60,7 @@ int main() {
    Vecteur2D v2d(3, {1, 2, 3});                 // [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
    Vecteur2D v2e(3, Vecteur1D{1, 2, 3});        // [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
    Vecteur2D v2f = {{1, 2, 3}, {4, 5, 6}};      // [[1, 2, 3], [4, 5, 6]]
-   Vecteur2D v2g = {v1c, v1d, v1f};             // [[0, 0, 0, 0, 0], [2, 2, 2], [1, 2, 3]]
+   Vecteur2D v2g = {v1c, v1d, v1f};             // [[0, 0, 0], [2, 2, 2], [1, 2, 3]]
 //   cout << v2g << endl;
 
    //------------------------------------------------------
