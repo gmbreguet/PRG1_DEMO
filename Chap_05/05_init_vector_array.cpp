@@ -22,6 +22,8 @@ using Vecteur2D = vector<Vecteur1D>;
 using Array1D   = array<int,3>;
 using Array2D   = array<Array1D, 3>;
 
+Array1D a1global;                            // [0, 0, 0]   => initialisé à 0
+
 //---------------------------------------------------------
 ostream& operator<< (ostream& os, const Vecteur1D& v);
 ostream& operator<< (ostream& os, const Vecteur2D& v);
@@ -60,11 +62,12 @@ int main() {
    //------------------------------------------------------
    // Array 1D
    //------------------------------------------------------
-   Array1D a1a;                                 // []
+   Array1D a1a;                                 // [?, ?, ?]   => non initialisé
    Array1D a1b{1, 2, 3};                        // [1, 2, 3]   => liste d'initialisation
    Array1D a1c = {1, 2, 3};                     // [1, 2, 3]   => par agrégat
    Array1D a1d = Array1D{1, 2, 3};              // [1, 2, 3]   => constructeur par copie
    Array1D a1e; a1e = a1b;                      // [1, 2, 3]   => operateur de copie
+   static Array1D a1f;                          // [0, 0, 0]   => initialisé à 0 (static)
 //   cout << a1a << endl;
 
    //------------------------------------------------------
