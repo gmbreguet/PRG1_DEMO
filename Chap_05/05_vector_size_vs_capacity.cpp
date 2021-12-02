@@ -29,6 +29,13 @@ int main() {
    Vect  v;
 
    //---------------------------------------------------------
+   cout  << "-----------------------------------------------------"  << endl;
+   cout << "sizeof de vecteurs : " << endl;
+   cout << "Vect(  0)   : " << sizeof(Vect(  0))   << " octets" << endl;
+   cout << "Vect( 10)   : " << sizeof(Vect( 10))   << " octets" << endl;
+   cout << "Vect(100)   : " << sizeof(Vect(100))   << " octets" << endl;
+
+   //---------------------------------------------------------
    putHeader("RESIZE", MARGE);
    v.resize(100);
    cout  << setw(MARGE) << left  << "v(100)"
