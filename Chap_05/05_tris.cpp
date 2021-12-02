@@ -38,8 +38,8 @@ uintll selectionSort(vecteur& v);
 // ptr de fonction => action à faire sur le tableau
 void test(vecteur v,                      // vecteur par copie
           uintll  (*fct) (vecteur&),      // tri à faire sur la tableau
-          const   string& msg,            // msg à afficher
-          bool    coutVecteur = true);    // afficher vecteur? => false/true
+          const   string& msg = "",       // msg à afficher
+          bool    coutVecteur = false);   // afficher vecteur? => false/true
 
 //---------------------------------------------------------
 int main() {
@@ -55,42 +55,47 @@ int main() {
    const vecteur PART_CROISSANT  = {6, 7, 8, 9, 1, 2, 3, 4, 5};
 
    // test des tri
-   cout << endl << "tri à bulles " << endl;
+   cout << endl << "tri à bulles" << endl;
    test(VIDE,           bubbleSort1,   "swap", coutVecteur);
    test(RANDOM,         bubbleSort1,   "swap", coutVecteur);
    test(CROISSANT,      bubbleSort1,   "swap", coutVecteur);
    test(DECROISSANT,    bubbleSort1,   "swap", coutVecteur);
    test(PART_CROISSANT, bubbleSort1,   "swap", coutVecteur);
 
-   cout << endl << "tri à bulles optimisé " << endl;
+   cout << endl << "tri à bulles optimisé" << endl;
    test(VIDE,           bubbleSort2,   "swap", coutVecteur);
    test(RANDOM,         bubbleSort2,   "swap", coutVecteur);
    test(CROISSANT,      bubbleSort2,   "swap", coutVecteur);
    test(DECROISSANT,    bubbleSort2,   "swap", coutVecteur);
    test(PART_CROISSANT, bubbleSort2,   "swap", coutVecteur);
 
-   cout << endl << "tri par insertion " << endl;
-   test(VIDE,           insertSort,    "insertion", coutVecteur);
-   test(RANDOM,         insertSort,    "insertion", coutVecteur);
-   test(CROISSANT,      insertSort,    "insertion", coutVecteur);
-   test(DECROISSANT,    insertSort,    "insertion", coutVecteur);
-   test(PART_CROISSANT, insertSort,    "insertion", coutVecteur);
+   cout << endl << "tri par insertion" << endl;
+   test(VIDE,           insertSort,    "insertions", coutVecteur);
+   test(RANDOM,         insertSort,    "insertions", coutVecteur);
+   test(CROISSANT,      insertSort,    "insertions", coutVecteur);
+   test(DECROISSANT,    insertSort,    "insertions", coutVecteur);
+   test(PART_CROISSANT, insertSort,    "insertions", coutVecteur);
 
-   cout << endl << "tri par selection " << endl;
-   test(VIDE,           selectionSort, "permutation", coutVecteur);
-   test(RANDOM,         selectionSort, "permutation", coutVecteur);
-   test(CROISSANT,      selectionSort, "permutation", coutVecteur);
-   test(DECROISSANT,    selectionSort, "permutation", coutVecteur);
-   test(PART_CROISSANT, selectionSort, "permutation", coutVecteur);
+   cout << endl << "tri par selection" << endl;
+   test(VIDE,           selectionSort, "permutations", coutVecteur);
+   test(RANDOM,         selectionSort, "permutations", coutVecteur);
+   test(CROISSANT,      selectionSort, "permutations", coutVecteur);
+   test(DECROISSANT,    selectionSort, "permutations", coutVecteur);
+   test(PART_CROISSANT, selectionSort, "permutations", coutVecteur);
 
-//   cout << endl << "grand tableau " << endl;
-//   vecteur TRES_GRAND(10'000);
-//   generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
-//
-//   test(TRES_GRAND,     bubbleSort1,   coutVecteur);
-//   test(TRES_GRAND,     bubbleSort2,   coutVecteur);
-//   test(TRES_GRAND,     insertSort,    coutVecteur);
-//   test(TRES_GRAND,     selectionSort, coutVecteur);
+   cout << endl << "grands tableaux" << endl;
+   vecteur TRES_GRAND(100'000);
+   generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
+
+   test(TRES_GRAND,     bubbleSort1);
+   test(TRES_GRAND,     bubbleSort2);
+   test(TRES_GRAND,     insertSort);
+   test(TRES_GRAND,     selectionSort);
+
+   // avec la librairie algorithm
+   cout << "debut ... ";
+   sort(TRES_GRAND.begin(), TRES_GRAND.end());
+   cout << "fin" << endl;
 
    return EXIT_SUCCESS;
 }
