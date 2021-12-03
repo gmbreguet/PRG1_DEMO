@@ -1,3 +1,13 @@
+//---------------------------------------------------------
+// Fichier        : 05_enum_class.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : démontrer l'utilisation de vecteur
+//                  et d'enum class
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>
 #include <iostream>
 
