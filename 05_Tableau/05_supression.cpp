@@ -39,7 +39,6 @@ int main () {
    const Vecteur1D VECTEUR = {1, 2, 3, 1, 2, 3, 1, 1, 2, 3};
    Vecteur1D vecteur;   // vecteur de travail
 
-   //---------------------------------------------------
    cout << "-------------------------------------" << endl;
    cout << "supprimerPos(v, 2) => O(n)"            << endl;
    vecteur = VECTEUR;
@@ -47,7 +46,6 @@ int main () {
    supprimerPos(vecteur, 2);                  cout << endl;
    cout << "v : " << vecteur                       << endl;
 
-   //---------------------------------------------------
    cout << "-------------------------------------" << endl;
    cout << "supprimerValeur_On2(v, 1) => O(n^2)"   << endl;
    vecteur = VECTEUR;
@@ -55,7 +53,6 @@ int main () {
    supprimerValeur_On2(vecteur, 1);           cout << endl;
    cout << "v : " << vecteur                       << endl;
 
-   //---------------------------------------------------
    cout << "-------------------------------------" << endl;
    cout << "supprimerValeur_On1(v, 1) => O(n)"     << endl;
    vecteur = VECTEUR;
