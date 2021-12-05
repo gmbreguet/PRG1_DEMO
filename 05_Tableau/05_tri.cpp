@@ -15,7 +15,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <algorithm> // swap et
+#include <algorithm> // swap et generate
 #include <iomanip>   // setw
 #include <ctime>     // alea::srand(time..)
 #include <limits>    // alea::numeric_limits<int>
@@ -24,27 +24,27 @@ using namespace std;
 
 //---------------------------------------------------------
 // types de données
-using vecteur = vector<int>;
+using Vecteur = vector<int>;
 using uintll  = unsigned long long;
 
 //---------------------------------------------------------
 // fonctions auxiliaires
-ostream& operator<<(ostream& os, const vecteur& v);
+ostream& operator<<(ostream& os, const Vecteur& v);
 int  generateur();
-bool trier (vecteur::iterator itL, vecteur::iterator itR);
+bool trier (Vecteur::iterator itL, Vecteur::iterator itR);
 
 //---------------------------------------------------------
 // implémentation des algorithmes de tri
-uintll bubbleSort1  (vecteur& v);
-uintll bubbleSort2  (vecteur& v);
-uintll insertSort   (vecteur& v);
-uintll selectionSort(vecteur& v);
+uintll bubbleSort1  (Vecteur& v);
+uintll bubbleSort2  (Vecteur& v);
+uintll insertSort   (Vecteur& v);
+uintll selectionSort(Vecteur& v);
 
 //---------------------------------------------------------
 // vecteur reçu en copie volontairment
 // ptr de fonction => action à faire sur le tableau
-void test(vecteur v,                      // vecteur par copie
-          uintll  (*fct) (vecteur&),      // tri à faire sur la tableau
+void test(Vecteur v,                      // vecteur par copie
+          uintll  (*fct) (Vecteur&),      // tri à faire sur la tableau
           const   string& msg = "",       // msg à afficher
           bool    coutVecteur = false);   // afficher vecteur? => false/true
 
@@ -55,11 +55,11 @@ int main() {
    const bool    coutVecteur     = false;
 
    // vecteurs de travail
-   vecteur VIDE;
-   vecteur RANDOM          = {9, 5, 2, 6, 7, 3, 4, 1, 8};
-   vecteur CROISSANT       = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-   vecteur DECROISSANT     = {9, 8, 7, 6, 5, 4, 3, 2, 1};
-   vecteur PART_CROISSANT  = {6, 7, 8, 9, 1, 2, 3, 4, 5};
+   Vecteur VIDE;
+   Vecteur RANDOM          = {9, 5, 2, 6, 7, 3, 4, 1, 8};
+   Vecteur CROISSANT       = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+   Vecteur DECROISSANT     = {9, 8, 7, 6, 5, 4, 3, 2, 1};
+   Vecteur PART_CROISSANT  = {6, 7, 8, 9, 1, 2, 3, 4, 5};
 
    // test des tri
    cout << endl << "tri à bulles" << endl;
@@ -92,7 +92,7 @@ int main() {
 
    // création d'un grand tableau de valeurs aléatoires (algorithm)
    cout << endl << "grands tableaux" << endl;
-   vecteur TRES_GRAND(10'000);
+   Vecteur TRES_GRAND(10'000);
    generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
 
    test(TRES_GRAND,     bubbleSort1);
@@ -102,7 +102,7 @@ int main() {
 
    // vecteur de vecteurs et utilisation de for_each pour le tri (algorithm)
    cout << "debut ... ";
-   vector<vecteur> TABS = {VIDE, RANDOM, CROISSANT, DECROISSANT, PART_CROISSANT, TRES_GRAND};
+   vector<Vecteur> TABS = {VIDE, RANDOM, CROISSANT, DECROISSANT, PART_CROISSANT, TRES_GRAND};
    sort(TRES_GRAND.begin(), TRES_GRAND.end());
    cout << "fin" << endl;
 
@@ -112,7 +112,7 @@ int main() {
 //---------------------------------------------------------
 // version habituelle mais avec - i - 1 ... ;(
 //---------------------------------------------------------
-uintll bubbleSort0(vecteur& v){
+uintll bubbleSort0(Vecteur& v){
    unsigned long cpt = 0;
    if (v.size() > 0){    // size_t = unsigned => 0 - 1 => BCP
       for (size_t i = 0; i < v.size() - 1; ++i){
@@ -125,10 +125,10 @@ uintll bubbleSort0(vecteur& v){
       } // for i
    } // if
    return cpt;
-}
+}
 
 //---------------------------------------------------------
-uintll bubbleSort1(vecteur& v){
+uintll bubbleSort1(Vecteur& v){
    unsigned long cpt = 0;
    if (v.size() > 0){   // size_t = unsigned => 0 - 1 => BCP
       for (size_t i = 0; i < v.size() - 1; ++i){
@@ -141,10 +141,10 @@ uintll bubbleSort1(vecteur& v){
       } // for i
    } // if
    return cpt;
-}
+}
 
 //---------------------------------------------------------
-uintll bubbleSort2(vecteur& v){
+uintll bubbleSort2(Vecteur& v){
    unsigned long cpt = 0;
    if (v.size() > 0) {
       bool fini = false;
@@ -162,10 +162,10 @@ uintll bubbleSort2(vecteur& v){
       } // while
    } // if
    return cpt;
-}
+}
 
 //---------------------------------------------------------
-uintll insertSort(vecteur& v){
+uintll insertSort(Vecteur& v){
    unsigned long cpt = 0;
    int tmp;
    size_t j;
@@ -180,7 +180,7 @@ uintll insertSort(vecteur& v){
       v[j] = tmp;
    } // for
    return cpt;
-}
+}
 
 //---------------------------------------------------------
 uintll selectionSort(vector<int>& v) {
@@ -199,11 +199,11 @@ uintll selectionSort(vector<int>& v) {
       } // for
    } // if
    return cpt;
-}
+}
 
 //---------------------------------------------------------
-void test(vecteur v,
-          uintll  (*fct) (vecteur&),
+void test(Vecteur v,
+          uintll  (*fct) (Vecteur&),
           const   string& msg,
           bool    coutVecteur) {
 
@@ -214,7 +214,7 @@ void test(vecteur v,
       cout << "avant : " << v << endl;
    }
 
-   uintll cpt = fct(v);
+   uintll cpt = fct(v);
 
    if (coutVecteur) {
       cout << "apres : " << v << endl;
@@ -224,7 +224,7 @@ void test(vecteur v,
 }
 
 //---------------------------------------------------------
-ostream& operator<<(ostream& os, const vecteur& v) {
+ostream& operator<<(ostream& os, const Vecteur& v) {
    os << "[";
    for (size_t i=0; i<v.size(); ++i) {
       if (i)
@@ -250,6 +250,6 @@ int generateur() {
 }
 
 //---------------------------------------------------------
-bool trier (vecteur::iterator itL, vecteur::iterator itR) {
+bool trier (Vecteur::iterator itL, Vecteur::iterator itR) {
    return *itL < *itR;
 }
