@@ -26,9 +26,9 @@ ostream& operator<<(ostream& os, const Matrice& m);
 //---------------------------------------------------------
 bool estCarree(const Matrice& m);
 bool sommesElementsDiagonaux(const Matrice& matrice,
-                             int&  sommeDiagGauche,
-                             int&  sommeDiagDroite);
-void test(const Matrice& m);
+                                   int&     sommeGD,  // diag \ gauche-droite
+                                   int&     sommeDG); // diag / droite-gauche
+void test(const Matrice& m);  // fonction de test
 
 //---------------------------------------------------------
 int main() {
@@ -64,17 +64,17 @@ bool estCarree(const Matrice& m) {
 
 //---------------------------------------------------------
 bool sommesElementsDiagonaux(const Matrice& matrice,
-                             int& sommeDiagGauche,
-                             int& sommeDiagDroite) {
+                                   int&     sommeGD,
+                                   int&     sommeDG) {
 
    if (!estCarree(matrice))
       return false;
 
    const size_t TAILLE = matrice.size();
-   sommeDiagGauche = sommeDiagDroite = 0;
+   sommeGD = sommeDG = 0;
    for (size_t i = 0; i < TAILLE; ++i) {
-      sommeDiagGauche += matrice[i][i];
-      sommeDiagDroite += matrice[i][TAILLE - i - 1];
+      sommeGD += matrice[i][i];
+      sommeDG += matrice[i][TAILLE - i - 1];
    }
 
    return true;
