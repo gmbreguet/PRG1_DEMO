@@ -32,7 +32,7 @@ int main() {
 
 //-------------------------------------------------------------------
 ostream& operator<<(ostream& os, const Chiffre& c) {
-   os << CHIFFRE[size_t(c)];
+   os << CHIFFRE[int(c)];
    return os;
 }
 
