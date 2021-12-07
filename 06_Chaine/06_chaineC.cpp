@@ -39,10 +39,10 @@ int main() {
    char chaine1[] = "Hello";
    char chaine2[] = "Hello";
 
-   cout << " chaine1       : "   <<        chaine1 << endl; // adresses des ...
-   cout << " chaine2       : "   <<        chaine2 << endl; // ... tableaux
+   cout << " chaine1       : "   <<        chaine1 << endl; // Hello
+   cout << " chaine2       : "   <<        chaine2 << endl; // Hello
    cout << "*chaine1       : "   <<       *chaine1 << endl; // H
-   cout << "*chaine2       : "   <<       *chaine2 << endl; // H
+   cout << " chaine2[0]    : "   <<     chaine2[0] << endl; // H
    cout << "(void*)chaine1 : "   << (void*)chaine1 << endl; // adresses ...
    cout << "(void*)chaine2 : "   << (void*)chaine2 << endl; // ... différentes
 
