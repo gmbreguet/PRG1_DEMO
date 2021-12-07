@@ -20,14 +20,14 @@ Point::Point()
 : nom("defaut"), x(0), y(0) {
    cout << "constructeur sans paramètre ..." << endl;
    // this->nom = "nouveau";  // pas possible car const
-};
+}
 
 //----------------------------------------------------
 Point::Point(const string& nom, int x, int y)
 : nom(nom), x(x), y(y) {
    // this->nom = "nouveau";  // pas possible car const
    cout << "constructeur avec paramètre ..." << endl;
-};
+}
 
 //----------------------------------------------------
 Point::Point(const Point& point) : nom(point.nom) {
