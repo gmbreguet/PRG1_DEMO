@@ -31,8 +31,7 @@ int main() {
 //   ptr1[0] = 'h';     // contantes litérales => pas possible
 
    ptr3 = ptr1;         // affectation possible mais seul le pointeur est mis à jour.
-                        // /!\ la chaine "Bonjour" east perdue !!
-
+                        // /!\ la chaine "Bonjour" est perdue !!
    cout << " ptr3          : "   <<        ptr3    << endl; // Hello
 
    //----------------------------------------------------------------
