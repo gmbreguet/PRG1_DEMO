@@ -48,13 +48,17 @@ int main() {
    cout << "      &chaine2 : "   <<       &chaine2 << endl; // ... idem
 
    chaine1[0] = 'h';    // tableau de caractères => ok
-//   chaine1 = chaine2;   // pas d'affectation globale entre tableaux
+// chaine1 = chaine2;   // pas d'affectation globale entre tableaux
+
+   char chaine3[  ] = "hello";        // Hello\0 => 6 caractères
+   char chaine4[10] = "hello";        // Hello\0 => 6 caractères, capacité de 10 cars
+// char chaine5[ 5] = "hello";        // erreur => pas la place de stocker Hello\0 (ok en C)
 
    //----------------------------------------------------------------
    cout << endl << "Caractères spéciaux" << endl;
    // une chaine peut contenir des caractères spéciaux
-   char chaine3[] = "Bon\tjour\0tout le monde";
-   cout << " chaine3       : "   <<        chaine3 << endl; // Bon(tab)jour
+   char chaine6[] = "Bon\tjour\0tout le monde";
+   cout << " chaine6       : "   <<        chaine6 << endl; // Bon(tab)jour
 
    return EXIT_SUCCESS;
 }
