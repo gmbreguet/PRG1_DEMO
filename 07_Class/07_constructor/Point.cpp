@@ -1,5 +1,13 @@
-#include <string>
-#include <vector>
+//---------------------------------------------------------
+// Fichier        : 07_point.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-07
+// But            : démontrer les bases des constructeurs
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
+#include <iostream>
 
 #include "Point.h"
 

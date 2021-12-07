@@ -1,8 +1,13 @@
-#include <iostream>  // cout et cin
-#include <string>
-#include <vector>
+//---------------------------------------------------------
+// Fichier        : 07_point.h
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-07
+// But            : démontrer les bases des constructeurs
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
-using namespace std;
+#include <string>
 
 //---------------------------------------------------------------------
 class Point {
@@ -12,7 +17,7 @@ public:
    // constructeurs
    //----------------------------------------------------
    Point();
-   Point(const string& nom, int x=0, int y=0);
+   Point(const std::string& nom, int x=0, int y=0);
    Point(const Point& point);
 
    //----------------------------------------------------
@@ -31,7 +36,7 @@ public:
    void afficher() const;
 
 private:
-   const string nom;
+   const std::string nom;
    int x = 0;
    int y = 0;
 };
