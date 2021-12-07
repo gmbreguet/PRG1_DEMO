@@ -27,6 +27,7 @@ int main() {
    cout << "*ptr2          : "   <<       *ptr2    << endl; // H
    cout << "(void*)ptr1    : "   << (void*)ptr1    << endl; // la meme ...
    cout << "(void*)ptr2    : "   << (void*)ptr2    << endl; // ... adresse
+   cout << "      &ptr2    : "   <<       &ptr2    << endl; // adresse du ptr ptr2
 
 //   ptr1[0] = 'h';     // contantes litérales => pas possible
 
