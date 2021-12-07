@@ -33,7 +33,7 @@ int main() {
 
    ptr3 = ptr1;         // affectation possible mais seul le pointeur est mis à jour.
                         // /!\ la chaine "Bonjour" est perdue !!
-   cout << " ptr3             : "   <<        ptr3    << endl; // Hello
+   cout << "       ptr3       : "   <<        ptr3       << endl; // Hello
 
    //----------------------------------------------------------------
    cout << endl << "tableau de caractères" << endl;
