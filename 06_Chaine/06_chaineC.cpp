@@ -44,8 +44,8 @@ int main() {
    cout << " chaine2       : "   <<        chaine2 << endl; // ... tableaux
    cout << "*chaine1       : "   <<       *chaine1 << endl; // H
    cout << "*chaine2       : "   <<       *chaine2 << endl; // H
-   cout << "(void*)chaine1 : "   << (void*)chaine1 << endl; // la meme ...
-   cout << "(void*)chaine2 : "   << (void*)chaine2 << endl; // ... adresse
+   cout << "(void*)chaine1 : "   << (void*)chaine1 << endl; // adresses ...
+   cout << "(void*)chaine2 : "   << (void*)chaine2 << endl; // ... différentes
 
    chaine1[0] = 'h';    // tableau de caractères => ok
 //   chaine1 = chaine2;   // pas d'affectation globale entre tableaux
