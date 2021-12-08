@@ -16,8 +16,8 @@
 
 
 class Personne {
-   enum class Sexe {HOMME, FEMME};
    public:
+      enum class Sexe {HOMME, FEMME};
       Personne (const std::string& nom,
                 const Date&        date,
                 const Sexe&        sexe);

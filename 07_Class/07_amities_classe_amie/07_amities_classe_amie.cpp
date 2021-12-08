@@ -46,12 +46,11 @@ int main() {
    
    cout << endl;
    Date     date   (11, 2, 2013);
-   Personne charly ("Chappelin", date, Sexe::HOMME);
+   Personne charly ("Chappelin", date, Personne::Sexe::HOMME);
    
    date.afficher();
    cout << endl;
    charly.afficher();
 
-   getchar();
    return EXIT_SUCCESS;
 }

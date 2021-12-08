@@ -21,7 +21,9 @@ class Date {
 
       Date (const Date& date);
 
-      void afficher () const;
+      Date& operator= (const Date& date);
+
+      void afficher() const;
 
    private:
       int jour;

@@ -30,6 +30,14 @@ Date::Date (const Date& date) {
 }
 
 //--------------------------------------------------------
+Date& Date::operator= (const Date& date) {
+   this->jour  = date.jour;
+   this->mois  = date.mois;
+   this->annee = date.annee;
+   return *this;
+}
+
+//--------------------------------------------------------
 void Date::afficher() const {
    cout << jour << "/" << mois << "/" << annee;
 }
