@@ -21,7 +21,11 @@ int main () {
    const string MOT     = "informatique";
    const string PONCT   = " -_,.;:!'\"";
 
-   string chaine = "L’orientation informatique logicielle est caractérisée par une solide base en programmation, en méthodologies de développement, en modélisation et traitement de données, en développement d’applications et services Internet, en architectures client-serveur des systèmes informatiques et en développement d’applications pour systèmes mobiles.";
+   string chaine = "L’orientation informatique logicielle est caractérisée par "
+                   "une solide base en programmation, en méthodologies de développement, "
+                   "en modélisation et traitement de données, en développement d’applications "
+                   "et services Internet, en architectures client-serveur des systèmes "
+                   "informatiques et en développement d’applications pour systèmes mobiles.";
 
    // position de tous les mots "et"
    size_t pos = 0;
@@ -62,7 +66,7 @@ int main () {
    cout << s.find_first_of("Good Bye!")         << endl; // 1  H<e>llo World!
    cout << s.find_first_of("Good Bye!", 0, 4)   << endl; // 4  Hell<o> World!
    cout << s.find_first_of("Good Bye!", 6, 2)   << endl; // 7  Hello W<o>rld!
-   cout << s.find_first_of("Good Bye!", 6, 4)   << endl; // 1  Hello W<o>rld!
+   cout << s.find_first_of("Good Bye!", 6, 4)   << endl; // 7  Hello W<o>rld!
    //                           |       |   |_______ nbre de chars de la liste à utiliser
    //                           |       |___________ position de recherche dans le string s
    //                           |___________________ liste de caractères à chercher
