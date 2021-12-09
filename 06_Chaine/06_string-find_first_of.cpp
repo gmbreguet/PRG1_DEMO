@@ -67,7 +67,7 @@ int main () {
    cout << s.find_first_of("Good Bye!", 0, 4)   << endl; // 4  Hell<o> World!
    cout << s.find_first_of("Good Bye!", 6, 2)   << endl; // 7  Hello W<o>rld!
    cout << s.find_first_of("Good Bye!", 6, 4)   << endl; // 7  Hello W<o>rld!
-   //                           |       |   |________ nbre de chars de la liste à utiliser
+   //                           |       |  |_________ nbre de chars de la liste à utiliser
    //                           |       |____________ position de recherche dans le string s
    //                           |____________________ liste de caractères à chercher
 
