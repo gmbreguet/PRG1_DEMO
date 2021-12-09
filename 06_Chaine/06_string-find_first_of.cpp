@@ -57,8 +57,8 @@ int main () {
    cout << s.find_first_of(vowels, 2)           << endl; // 4  Hell<o> World!
    cout << s.find_first_of(vowels, s.size())    << endl; // string::npos
    cout << s.find_first_of(vowels, 5)           << endl; // 7  Hello W<o>rld!
-//                           |     |_____ position de recherche dans le string s
-//                           |___________ liste de caractères à chercher
+   //                        |     |_________________ position de recherche dans le string s
+   //                        |_______________________ liste de caractères à chercher
 
    cout << endl;
    cout << "=> char*" << endl;
@@ -67,9 +67,9 @@ int main () {
    cout << s.find_first_of("Good Bye!", 0, 4)   << endl; // 4  Hell<o> World!
    cout << s.find_first_of("Good Bye!", 6, 2)   << endl; // 7  Hello W<o>rld!
    cout << s.find_first_of("Good Bye!", 6, 4)   << endl; // 7  Hello W<o>rld!
-   //                           |       |   |_______ nbre de chars de la liste à utiliser
-   //                           |       |___________ position de recherche dans le string s
-   //                           |___________________ liste de caractères à chercher
+   //                           |       |   |________ nbre de chars de la liste à utiliser
+   //                           |       |____________ position de recherche dans le string s
+   //                           |____________________ liste de caractères à chercher
 
    return EXIT_SUCCESS;
 }
