@@ -92,7 +92,7 @@ int main() {
 
    // création d'un grand tableau de valeurs aléatoires (algorithm)
    cout << endl << "grands tableaux" << endl;
-   Vecteur TRES_GRAND(10'000);
+   Vecteur TRES_GRAND(100'000);
    generate(TRES_GRAND.begin(), TRES_GRAND.end(), generateur);
 
    test(TRES_GRAND,     bubbleSort1);
