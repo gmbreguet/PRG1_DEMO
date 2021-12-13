@@ -15,7 +15,8 @@ using namespace std;
 
 //---------------------------------------------------------
 // types de données
-using Vecteur = vector<int>;
+using Data    = int;
+using Vecteur = vector<Data>;
 using Matrice = vector<Vecteur>;
 
 //---------------------------------------------------------
@@ -55,7 +56,7 @@ int main() {
 bool estCarree(const Matrice& m) {
    if (m.empty())
       return true;
-   for (size_t i=0; i<m.size(); ++i) {
+   for (Matrice::size_type i=0; i<m.size(); ++i) {
       if (m[i].size() != m.size())
          return false;
    }
@@ -70,7 +71,7 @@ bool sommesElementsDiagonaux(const Matrice& matrice,
    if (!estCarree(matrice))
       return false;
 
-   const size_t TAILLE = matrice.size();
+   const Matrice::size_type TAILLE = matrice.size();
    sommeGD = sommeDG = 0;
    for (size_t i = 0; i < TAILLE; ++i) {
       sommeGD += matrice[i][i];
@@ -98,7 +99,7 @@ void test(const Matrice& m) {
 //---------------------------------------------------------
 ostream& operator<<(ostream& os, const Vecteur& v) {
    os << "[";
-   for (size_t i=0; i<v.size(); ++i) {
+   for (Matrice::size_type i=0; i<v.size(); ++i) {
       if (i)
          os << ", ";
       os << v[i];
@@ -112,8 +113,32 @@ ostream& operator<<(ostream& os, const Vecteur& v) {
 ostream& operator<<(ostream& os, const Matrice& m) {
    if (m.empty())
       cout << "[]";
-   for (size_t i=0; i<m.size(); ++i) {
+   for (Matrice::size_type i=0; i<m.size(); ++i) {
       os << m[i] << endl;
    }
    return os;
 }
+
+//      []
+//      somme DG : 0
+//      somme GD : 0
+//
+//      [1, 2, 3]
+//      [4, 5, 6]
+//      [7, 8, 9]
+//
+//      somme DG : 15
+//      somme GD : 15
+//
+//      [1, 2, 3]
+//      [4, 5]
+//      [7, 8, 9]
+//
+//      /!\ la matrie n'est pas carrée
+//
+//      [1, 2, 3]
+//      [4, 5, 6]
+//
+//      /!\ la matrie n'est pas carrée
+//
+//      Program ended with exit code: 0
