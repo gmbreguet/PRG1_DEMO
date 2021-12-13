@@ -1,5 +1,6 @@
 //---------------------------------------------------------
-// Fichier        : 07_amities_classe_amie.cpp
+// Demo           : 07_amities_classe_amie
+// Fichier        : main.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2020-11-30
 // But            : démontrer l'utilisation de classes amies

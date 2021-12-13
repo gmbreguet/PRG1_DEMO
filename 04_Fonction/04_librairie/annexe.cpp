@@ -1,4 +1,5 @@
 //---------------------------------------------------------
+// Demo           : 04_librairie
 // Fichier        : annexes.cpp (le corps de sous-programmes du .h)
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2020-09-15

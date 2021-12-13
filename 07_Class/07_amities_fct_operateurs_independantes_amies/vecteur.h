@@ -1,3 +1,13 @@
+//---------------------------------------------------------
+// Demo           : 07_amities_fct_operateurs_independantes_amies
+// Fichier        : vecteur.h
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : operateurs sur vector
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #ifndef VECTEURS_H
 #define VECTEURS_H
 

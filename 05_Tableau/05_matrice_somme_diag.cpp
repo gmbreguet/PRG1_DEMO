@@ -1,4 +1,5 @@
 //---------------------------------------------------------
+// Demo           : 05_matrice_somme_diag
 // Fichier        : 05_matrice_somme_diag.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-01

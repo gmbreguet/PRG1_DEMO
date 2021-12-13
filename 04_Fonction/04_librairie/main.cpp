@@ -1,5 +1,6 @@
 //---------------------------------------------------------
-// Fichier        : 04_librairie
+// Demo           : 04_librairie
+// Fichier        : main.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2020-09-15
 // But            : exemple d'utilisation d'une

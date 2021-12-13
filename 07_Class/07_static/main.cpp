@@ -1,7 +1,17 @@
+//---------------------------------------------------------
+// Demo           : 07_methode_static
+// Fichier        : main.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-07
+// But            : démontrer méthodes static
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>   // EXIT_SUCCESS
 #include <iostream>  // cout et cin
 
-#include "Classe.h"
+#include "classe.h"
 
 using namespace std;
 

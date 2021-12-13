@@ -1,4 +1,5 @@
 //---------------------------------------------------------
+// Demo           : 04_librairie
 // Fichier        : annexes.h (h pour header)
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2020-09-15

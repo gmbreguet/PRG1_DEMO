@@ -1,4 +1,5 @@
 //---------------------------------------------------------
+// Demo           : 06_chaineC
 // Fichier        : 06_chaineC.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-07

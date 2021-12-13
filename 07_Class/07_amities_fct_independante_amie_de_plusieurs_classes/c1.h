@@ -1,3 +1,13 @@
+//---------------------------------------------------------
+// Demo           : 07_amities_fct_independante_amie_de_plusieurs_classes
+// Fichier        : c1.h
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2020-11-30
+// But            : classe c1
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #ifndef C1_H
 #define C1_H
 

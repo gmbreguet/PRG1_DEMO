@@ -1,4 +1,5 @@
 //---------------------------------------------------------
+// Demo           : 06_string-find_first_of
 // Fichier        : 06_string-find_first_of.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-09
