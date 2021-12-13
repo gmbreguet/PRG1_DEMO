@@ -1,0 +1,23 @@
+# -------------------------------------------------------------------
+# GMB 2021
+# g++ compile option
+# -------------------------------------------------------------------
+#
+#!/bin/bash
+#
+VERSION="-std=c++20"
+WARNING="-Wall -Wextra -Wconversion -Wsign-conversion -pedantic"
+
+BASENAME=$1
+FILE_EXT=${BASENAME##*.}     # not used
+FILE_NAME=${BASENAME%.*}
+
+# echo "VERSION   : " $VERSION
+# echo "WARNING   : " $WARNING
+# echo "BASENAME  : " $BASENAME
+# echo "FILE_EXT  : " $FILE_EXT
+# eecho "FILE_NAME : " $FILE_NAME
+
+echo "-------------------------------------------------------------"
+g++ $VERSION $WARNING $MAIN $OUTPUT $FILE_NAME.cpp -o $FILE_NAME.out
+
