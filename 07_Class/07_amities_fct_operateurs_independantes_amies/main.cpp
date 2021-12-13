@@ -1,5 +1,7 @@
 #include <cstdlib>
-#include "vecteurs.h"
+#include "vecteur.h"
+
+using namespace std;
 
 int main() {
    Vecteur v1, v2;
@@ -16,6 +18,6 @@ int main() {
       }
    }
    cout << "Saisie incorrecte !\n";
-   system("PAUSE");
+   
    return EXIT_FAILURE;
 }

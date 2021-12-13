@@ -15,6 +15,5 @@ int main() {
    C2 c2(1.0);
    afficher(c1, c2); // affichera (0, 1)
 
-   system("PAUSE");
    return EXIT_SUCCESS;
 }

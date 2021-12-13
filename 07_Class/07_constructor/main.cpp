@@ -1,5 +1,5 @@
 //---------------------------------------------------------
-// Fichier        : 07_main.cpp
+// Fichier        : main.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-07
 // But            : démontrer les bases des constructeurs
@@ -11,7 +11,7 @@
 #include <iostream>
 #include <vector>       // classe vector
 
-#include "Point.h"
+#include "point.h"
 
 using namespace std;
 
