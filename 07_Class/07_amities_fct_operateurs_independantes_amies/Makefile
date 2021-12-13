@@ -1,4 +1,11 @@
-main: main.cpp vecteur.h
-	g++ -std=c++20 -Wall -Wextra -Wconversion -Wsign-conversion -pedantic vecteur.cpp main.cpp -o main.exe
+MAIN    = main.cpp
+OTHERS  = vecteur.cpp
+OUTPUT  = main.exe
+
+VERSION = -std=c++20
+WARNING = -Wall -Wextra -Wconversion -Wsign-conversion -pedantic
+
+all:
+	g++ $(VERSION) $(WARNING) $(OTHERS) $(MAIN) -o $(OUTPUT)
 clean:
 	rm main

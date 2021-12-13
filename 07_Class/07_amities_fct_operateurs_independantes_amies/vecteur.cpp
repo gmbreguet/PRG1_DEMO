@@ -1,6 +1,6 @@
-using namespace std;
-
 #include "vecteur.h"
+
+using namespace std;
 
 //--------------------------------------------------------
 ostream& operator <<(ostream& os, const Vecteur& v) {

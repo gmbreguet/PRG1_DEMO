@@ -1,4 +1,11 @@
-main: main.cpp point.h
-	g++ -std=c++20 -Wall -Wextra -Wconversion -Wsign-conversion -pedantic point.cpp main.cpp -o main.exe
+MAIN    = main.cpp
+OTHERS  = point.cpp
+OUTPUT  = main.exe
+
+VERSION = -std=c++20
+WARNING = -Wall -Wextra -Wconversion -Wsign-conversion -pedantic
+
+all:
+	g++ $(VERSION) $(WARNING) $(OTHERS) $(MAIN) -o $(OUTPUT)
 clean:
 	rm main

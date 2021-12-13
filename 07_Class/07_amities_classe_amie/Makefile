@@ -1,4 +1,11 @@
-main: main.cpp date.h personne.h
-	g++ -std=c++20 -Wall -Wextra -Wconversion -Wsign-conversion -pedantic main.cpp date.cpp personne.cpp -o main.exe
+MAIN    = main.cpp
+OTHERS  = date.cpp personne.cpp
+OUTPUT  = main.exe
+
+VERSION = -std=c++20
+WARNING = -Wall -Wextra -Wconversion -Wsign-conversion -pedantic
+
+all:
+	g++ $(VERSION) $(WARNING) $(OTHERS) $(MAIN) -o $(OUTPUT)
 clean:
 	rm main
