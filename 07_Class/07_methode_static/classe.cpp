@@ -26,7 +26,7 @@ Classe::Classe(int valeur)
    : NO_OBJ(next), valeur(valeur) {
       ++total;
       ++next;
-};
+}
 
 //---------------------------------------------------------------------
 Classe::~Classe() {
