@@ -1,5 +1,5 @@
 //---------------------------------------------------------
-// Demo           : 07_amities_classe_amie
+// Demo           : 07_protected
 // Fichier        : date.h
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2020-11-30
