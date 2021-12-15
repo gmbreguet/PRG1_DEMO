@@ -3,7 +3,7 @@
 // Fichier        : 06_string_stream.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-15
-// But            : dÃ©montrer l'utilisation de stringstream
+// But            : démontrer l'utilisation de stringstream
 // Modifications  :
 // Remarque(s)    : tuto sympa
 //                : https://www.softwaretestinghelp.com/stringstream-class-in-cpp
