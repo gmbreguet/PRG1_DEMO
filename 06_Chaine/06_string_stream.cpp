@@ -66,7 +66,7 @@ string to_string(const Vecteur& v){
       ss << setfill(F) << setw(W) << to_string(v[i]);
    }
    ss << "]";
-   // ss.str("");
+   
    return ss.str();
 }
 
