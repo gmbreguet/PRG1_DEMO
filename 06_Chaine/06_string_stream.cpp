@@ -32,10 +32,11 @@ int main() {
    Vecteur v{1, 2, 3, 4};
    cout << "vecteur : " << v << endl;
 
+   // utilisation de sstream pour créer un string
    string output = "vecteur : " + to_string(v);
    cout << output << endl;
 
-
+   // utlisation de sstream transmis a l'op�érateur <<
    cout << endl;
    stringstream ss;
    ss.str("bonjour");                   // assign dans ss
