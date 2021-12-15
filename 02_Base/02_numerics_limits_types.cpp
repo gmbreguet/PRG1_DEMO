@@ -57,9 +57,5 @@ int main () {
    cout << "numeric_limits<double>::digits         : " << numeric_limits<double>::digits        << endl;
    cout << "numeric_limits<long double>::digits    : " << numeric_limits<long double>::digits   << endl;
 
-   cout << "-----------------------------------------------------------------------------"      << endl;
-   // Fin du programme
-   cout << "presser ENTER pour quitter" << endl;
-   cin.ignore(numeric_limits<streamsize>::max(), '\n'); // vider le buffer
    return EXIT_SUCCESS;
 }

@@ -35,10 +35,6 @@ int main() {
    cout << fixed      << setprecision(20) << 1.2 << endl;   // 1.19999999999999995559
    cout << scientific << setprecision(20) << 1.2 << endl;   // 1.19999999999999995559
 
-   // fin de programme
-   cout << "Presser ENTER pour quitter";
-   cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
    return EXIT_SUCCESS;
 }
 
