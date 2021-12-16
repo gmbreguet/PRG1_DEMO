@@ -29,7 +29,9 @@ string to_string(const Vecteur& v);
 //-------------------------------------------------------------------
 int main() {
 
+   //----------------------------------------------------------------
    // utlisation de sstream transmis a l'operateur <<
+   //----------------------------------------------------------------
    stringstream ss;
    ss.str("bonjour");                   // assign dans ss
    cout << ss.str();
@@ -43,7 +45,9 @@ int main() {
    ss.str("");                          // assign => efface ss
    cout << ss.str();
 
+   //----------------------------------------------------------------
    // utilisation de sstream pour creer un string
+   //----------------------------------------------------------------
    cout << endl;
    Vecteur v{1, 2, 3, 4};
    cout << "vecteur : " << v << endl;
