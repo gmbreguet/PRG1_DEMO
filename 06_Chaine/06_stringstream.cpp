@@ -29,15 +29,7 @@ string to_string(const Vecteur& v);
 //-------------------------------------------------------------------
 int main() {
 
-   Vecteur v{1, 2, 3, 4};
-   cout << "vecteur : " << v << endl;
-
-   // utilisation de sstream pour creer un string
-   string output = "vecteur : " + to_string(v);
-   cout << output << endl;
-
    // utlisation de sstream transmis a l'operateur <<
-   cout << endl;
    stringstream ss;
    ss.str("bonjour");                   // assign dans ss
    cout << ss.str();
@@ -50,6 +42,15 @@ int main() {
 
    ss.str("");                          // assign => efface ss
    cout << ss.str();
+
+   // utilisation de sstream pour creer un string
+   cout << endl;
+   Vecteur v{1, 2, 3, 4};
+   cout << "vecteur : " << v << endl;
+
+   string output = "vecteur : " + to_string(v);
+   cout << output << endl;
+   cout << endl;
 
    return EXIT_SUCCESS;
 }
@@ -76,3 +77,11 @@ ostream& operator<<(ostream& os, const Vecteur& v){
    return os << to_string(v);
 }
 
+
+//      bonjour a tous
+//
+//      hello world
+//
+//      vecteur : [001, 002, 003, 004]
+//      vecteur : [001, 002, 003, 004]
+//
