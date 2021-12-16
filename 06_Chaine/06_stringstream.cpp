@@ -77,7 +77,6 @@ ostream& operator<<(ostream& os, const Vecteur& v){
    return os << to_string(v);
 }
 
-
 //      bonjour a tous
 //
 //      hello world
