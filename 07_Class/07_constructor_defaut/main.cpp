@@ -38,7 +38,7 @@ int main() {
    A a3(a2);
    cout << "a3 : " << a3.valeur << endl;
    
-   // operateur de copie
+   // operateur d'affectation
    A a4;
    a4 = a3;
    cout << "a4 : " << a4.valeur << endl;
