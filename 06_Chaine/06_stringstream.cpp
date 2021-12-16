@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 06_string_stream
-// Fichier        : 06_string_stream.cpp
+// Demo           : 06_stringstream
+// Fichier        : 06_stringstream.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-15
 // But            : démontrer l'utilisation de stringstream
