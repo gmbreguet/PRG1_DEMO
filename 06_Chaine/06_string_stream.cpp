@@ -32,11 +32,11 @@ int main() {
    Vecteur v{1, 2, 3, 4};
    cout << "vecteur : " << v << endl;
 
-   // utilisation de sstream pour crÃ©er un string
+   // utilisation de sstream pour crer un string
    string output = "vecteur : " + to_string(v);
    cout << output << endl;
 
-   // utlisation de sstream transmis a l'opÃÃ©rateur <<
+   // utlisation de sstream transmis a l'oprateur <<
    cout << endl;
    stringstream ss;
    ss.str("bonjour");                   // assign dans ss
@@ -57,7 +57,7 @@ int main() {
 //-------------------------------------------------------------------
 string to_string(const Vecteur& v){
    const size_t W =  3;    // espacement
-   const char   F = '0';   // caractÃ¨re fill
+   const char   F = '0';   // caractre fill
    
    stringstream ss;
    ss << "[";
