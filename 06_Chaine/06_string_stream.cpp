@@ -57,7 +57,7 @@ int main() {
 //-------------------------------------------------------------------
 string to_string(const Vecteur& v){
    const size_t W =  3;    // espacement
-   const char   F = '0';   // caractére fill
+   const char   F = '0';   // caractere fill
    
    stringstream ss;
    ss << "[";
