@@ -35,13 +35,13 @@ A::A(int cste) : CSTE(cste) {
 // const int CSTE = 12;    // ne compile pas
    this->c = 'a';
    this->i =  0;
-};
+}
 
 A::A(int cste, char c, int i) : CSTE(cste) {
 // const int CSTE = 12;    // ne compile pas
    this->c = c;
    this->i = i * (isupper(c) ? 10 : 1);   // majuscule i*10
-};
+}
 
 //------------------------------------------------------
 void A::afficher() const {
