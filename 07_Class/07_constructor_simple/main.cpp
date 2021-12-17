@@ -1,5 +1,5 @@
 //---------------------------------------------------------
-// Demo           : 07_constructor_liste_initialisation
+// Demo           : 07_constructor_simple
 // Fichier        : main.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-17
