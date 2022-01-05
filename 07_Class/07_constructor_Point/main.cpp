@@ -20,16 +20,17 @@ using namespace std;
 // classe simple pour default, explicite et delete
 //---------------------------------------------------------------------
 class A {
-            A()         : default;     // créé par le compilateur
-            A(char p) {c=p; i=0;})
-   explicit A(int  p) {c='a'i=p;})     // => pas possible: A a = {1};
+public:
+            A() = default;             // créé par le compilateur
+            A(char p) {c= p;  i=0;}
+   explicit A(int  p) {c='a'; i=p;}    // => pas possible: A a = {1};
    void afficher() const;
 private:
    char c;
    int  i;
-}
+};
 
-void A::afficher() {
+void A::afficher() const {
    cout << "   c : " << c  << endl;
    cout << "   i : " << i  << endl;
 }
@@ -40,8 +41,8 @@ int main() {
       cout << "----------------------------" << endl;
       cout << "classe A "                    << endl;
       cout << "----------------------------" << endl;
-      A a1;                // => constructeur par defaut et sans paramètre
-      A a2('a');           // => constructeur par defaut et sans paramètre
+      A a1;
+      A a2('a');
 
    }
 
