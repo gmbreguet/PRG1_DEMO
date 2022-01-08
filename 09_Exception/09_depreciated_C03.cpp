@@ -128,14 +128,14 @@ int main () {
          valeur = saisie("votre choix : ", "/!\\ erreur de saisie");
          switch (valeur) {
             // gestion des differents cas
-            case 0: throw valeur;             // valeur entiere
-            case 1: throw &valeur;            // ptr sur entier
-            case 2: throw 'a';                // caractere
-            case 3: throw "chaine";           // chaine de caracteres
-            case 4: throw string("string");   // string
-            case 5: throw true;               // boolean
-            case 6: uneFonction(-1);          // exception non-prevue
-            case 7: throw invalid_argument(string("line : ") + to_string(__LINE__) + "\n" +
+            case 0 : throw valeur;             // valeur entiere
+            case 1 : throw &valeur;            // ptr sur entier
+            case 2 : throw 'a';                // caractere
+            case 3 : throw "chaine";           // chaine de caracteres
+            case 4 : throw string("string");   // string
+            case 5 : throw true;               // boolean
+            case 6 : uneFonction(-1);          // exception non-prevue
+            case 7 : throw invalid_argument(string("line : ") + to_string(__LINE__) + "\n" +
                                            string("file : ") + __FILE__);
             default: return EXIT_SUCCESS;
          }
