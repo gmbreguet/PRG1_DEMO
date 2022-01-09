@@ -1,8 +1,12 @@
-// --------------------------------------------------------------
-// But      : demontrer un cas de classe derrivée SIMPLE
-// Auteur   : GM Breguet
-// Date     : 3 avril 2020
-// --------------------------------------------------------------
+//---------------------------------------------------------
+// Demo           : 09_Heritage
+// Fichier        : 09_Heritage.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-13
+// But            : démontrer un cas simple d'héritage
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>

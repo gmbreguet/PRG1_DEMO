@@ -1,3 +1,15 @@
+//---------------------------------------------------------
+// Demo           : 08_specialisation_partielle_fonction
+// Fichier        : 08_specialisation_partielle_fonction.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-13
+// But            : démontrer l'algorithme utilisé pour sélectionner une fonction
+//                  en cas de spécialisation et de surcharge
+//                  CHAQUE SELECTION EST ILLUSTREE EN DETAIS
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>
 #include <iostream>
 #include <vector>

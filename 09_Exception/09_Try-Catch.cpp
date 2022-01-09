@@ -1,8 +1,12 @@
-// --------------------------------------------------------------
-// But      : demontrer les differents cas des exceptions en C++
-// Auteur   : GM Breguet
-// Date     : 3 avril 2020
-// --------------------------------------------------------------
+//---------------------------------------------------------
+// Demo           : 09_Try_Catch
+// Fichier        : 09_Try_Catch.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-13
+// But            : démontrer les try-catch
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>

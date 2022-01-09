@@ -1,8 +1,13 @@
-// --------------------------------------------------------------
-// But      : demontrer les differents cas des exceptions en C++
-// Auteur   : GM Breguet
-// Date     : 28 avril 2014
-// --------------------------------------------------------------
+//---------------------------------------------------------
+// Demo           : 09_depreciatedC03
+// Fichier        : 09_depreciatedC03.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-13
+// But            : démontrer les formes basics d'exceptions
+//                  aujourd'hui depreciées (throw entete de fonction)
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>

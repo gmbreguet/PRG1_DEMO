@@ -1,8 +1,13 @@
-// --------------------------------------------------------------
-// But      : demontrer les differents cas des exceptions en C++
-// Auteur   : GM Breguet
-// Date     : 16 avril 2020
-// --------------------------------------------------------------
+//---------------------------------------------------------
+// Demo           : 09_Terminaison
+// Fichier        : 09_Terminaison.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-13
+// But            : démontrer la terminaison de programme
+//                  en cas d'exceptions
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>

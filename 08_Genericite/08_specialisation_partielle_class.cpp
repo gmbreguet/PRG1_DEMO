@@ -1,3 +1,14 @@
+//---------------------------------------------------------
+// Demo           : 08_specialisation_partielle_class
+// Fichier        : 08_specialisation_partielle_class.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-13
+// But            : démontrer l'algorithme utilisé pour sélectionner une class
+//                  en cas de spécialisation et de surcharge
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
+
 #include <cstdlib>
 #include <iostream>
 #include <vector>

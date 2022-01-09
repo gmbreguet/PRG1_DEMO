@@ -1,8 +1,13 @@
-// --------------------------------------------------------------
-// But      : demontrer les differents cas des exceptions en C++
-// Auteur   : GM Breguet
-// Date     : 28 avril 2020
-// --------------------------------------------------------------
+//---------------------------------------------------------
+// Demo           : 09_Fonction_Try_Bloc
+// Fichier        : 09_Fonction_Try_Bloc.cpp
+// Auteur(s)      : BREGUET Guy-Michel
+// Date           : 2021-12-13
+// But            : démontrer la création et l'utilisation
+//                  des fonction try-bloc
+// Modifications  :
+// Remarque(s)    : NILL
+//---------------------------------------------------------
 
 #include <iostream>
 #include <cstdlib>
