@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 09_Exception_Derivee
-// Fichier        : 09_Exception_Derivee.cpp
+// Demo           : 09_exception_derivee
+// Fichier        : 09_exception_derivee.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-13
 // But            : démontrer la création et l'utilisation

@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 09_Exception_std
-// Fichier        : 09_Exception_std.cpp
+// Demo           : 09_exception_std
+// Fichier        : 09_exception_std.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-13
 // But            : démontrer l'utilisation l'utilisation standards

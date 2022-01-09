@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 09_Try_Catch
-// Fichier        : 09_Try_Catch.cpp
+// Demo           : 09_try-catch
+// Fichier        : 09_try-catch.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-13
 // But            : démontrer les try-catch

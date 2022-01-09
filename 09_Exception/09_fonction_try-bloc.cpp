@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 09_Fonction_Try_Bloc
-// Fichier        : 09_Fonction_Try_Bloc.cpp
+// Demo           : 09_fonction_try-bloc
+// Fichier        : 09_fonction_try-bloc.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-13
 // But            : démontrer la création et l'utilisation
