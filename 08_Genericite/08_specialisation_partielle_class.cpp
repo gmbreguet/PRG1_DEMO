@@ -8,7 +8,9 @@ using namespace std;
 // fonctions génériques
 //---------------------------------------------------
 template <typename T, typename U>
-void f(T t, U u) { cout << "f<T, U>" << endl; }
+void f(T t, U u) {
+   cout << "f<T, U>" << endl;
+}
 
 //// specialisation partielle => ne compile pas
 //template <typename U>
@@ -16,16 +18,22 @@ void f(T t, U u) { cout << "f<T, U>" << endl; }
 
 // specialisation complete
 template <>
-void f<int, float>(int t, float u) { cout << "f<int, float>" << endl; }
+void f<int, float>(int t, float u) {
+   cout << "f<int, float>" << endl;
+}
 
 //---------------------------------------------------
 // surcharge, pas spécialisation
 template <typename U>
-void f(int t, U u) { cout << "f<int, U>" << endl; }
+void f(int t, U u) {
+   cout << "f<int, U>" << endl;
+}
 
 //---------------------------------------------------
 // surcharge non générique
-void f(int t, double d) { cout << "f(int, double)" << endl; }
+void f(int t, double d) {
+   cout << "f(int, double)" << endl;
+}
 
 //---------------------------------------------------
 // classes génériques
@@ -33,7 +41,7 @@ void f(int t, double d) { cout << "f(int, double)" << endl; }
 template <typename T, typename U>
 class C {
 public:
-   C() { cout << "C<T, U>" << endl;}
+   C() { cout << "C<T, U>" << endl; }
 private:
    T t;
    U u;
@@ -45,7 +53,7 @@ private:
 template <typename U>
 class C<int, U> {
 public:
-   C() { cout << "C<int, U>" << endl;}
+   C() { cout << "C<int, U>" << endl; }
 private:
    int i;
    U   u;
@@ -55,7 +63,7 @@ private:
 template <>
 class C<int, float> {
 public:
-   C() { cout << "C<int, float>" << endl;}
+   C() { cout << "C<int, float>" << endl; }
 private:
    int   i;
    float f;

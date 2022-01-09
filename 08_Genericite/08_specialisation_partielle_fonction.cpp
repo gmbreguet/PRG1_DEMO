@@ -12,7 +12,8 @@ using namespace std;
 
 //---------------------------------------------------
 // 1) fonction générique
-template <typename T, typename U> void f(T t, U u);
+template <typename T, typename U>
+void f(T t, U u);
 
 //---------------------------------------------------
 // 2) specialisation partielle => PAS POSSIBLE
@@ -20,12 +21,14 @@ template <typename T, typename U> void f(T t, U u);
 
 //---------------------------------------------------
 // 3) specialisation complete de 1
-template <> void f<int, float>(int t, float u);
+template <>
+void f<int, float>(int t, float u);
 
 //---------------------------------------------------
 // 4) surcharge de 1 => pas spécialisation
 // NB : le 1er paramètre permet une conversion vers int
-template <typename U> void f(int t, U u);
+template <typename U>
+void f(int t, U u);
 
 //---------------------------------------------------
 // 5) surcharge ordinaire (non générique)

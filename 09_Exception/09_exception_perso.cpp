@@ -101,7 +101,7 @@ int main () {
                Rectangle r(0, -1);
             }
             case 2 : {
-               Rectangle r(10000000, 10000000);
+               Rectangle r(10'000'000, 10'000'000);
                cout << "surface : " << r.surface();
             }
 
