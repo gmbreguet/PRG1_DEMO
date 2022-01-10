@@ -11,7 +11,7 @@
 #include <cstdlib>   // EXIT_SUCCESS
 #include <iostream>  // cout et cin
 
-#include "classe.h"
+#include "Classe.h"
 
 using namespace std;
 

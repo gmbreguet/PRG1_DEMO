@@ -8,7 +8,7 @@
 // Remarque(s)    : NILL
 //---------------------------------------------------------
 
-#include "classe.h"
+#include "Classe.h"
 
 #include <iostream>  // cout et cin
 #include <string>
@@ -48,8 +48,8 @@ void Classe::afficherStat() {
 void Classe::afficherObj() const {
    cout  << "NO_OBJ     : " << this->NO_OBJ  << endl
          << "valeur     : " << this->valeur  << endl;
-//   valeur = 3 ; // méthode const => pas possible
-   //   afficherStat();
-//   Classe::afficherStat();
-   this->afficherStat();   // pourquoi pas ...
+// valeur = 3 ; // méthode const => pas possible
+   afficherStat();         // 3 manières d'appeler
+   Classe::afficherStat(); // .. la méthode static
+   this->afficherStat();   // .. afficherStat()
 }

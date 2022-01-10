@@ -1,5 +1,5 @@
 MAIN    = main.cpp
-OTHERS  = classe.cpp
+OTHERS  = Classe.cpp
 OUTPUT  = main.out
 
 VERSION = -std=c++20
