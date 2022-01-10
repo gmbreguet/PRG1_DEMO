@@ -42,3 +42,52 @@ int main() {
    
    return EXIT_SUCCESS;
 }
+/*
+CONST_STAT : 100
+next       : 1
+total      : 0
+
+NO_OBJ     : 1
+valeur     : 10
+CONST_STAT : 100
+next       : 2
+total      : 1
+CONST_STAT : 100
+next       : 2
+total      : 1
+CONST_STAT : 100
+next       : 2
+total      : 1
+
+NO_OBJ     : 2
+valeur     : 20
+CONST_STAT : 100
+next       : 3
+total      : 2
+CONST_STAT : 100
+next       : 3
+total      : 2
+CONST_STAT : 100
+next       : 3
+total      : 2
+
+CONST_STAT : 100
+next       : 3
+total      : 0
+
+NO_OBJ     : 3
+valeur     : 30
+CONST_STAT : 100
+next       : 4
+total      : 1
+CONST_STAT : 100
+next       : 4
+total      : 1
+CONST_STAT : 100
+next       : 4
+total      : 1
+
+CONST_STAT : 100
+next       : 4
+total      : 1
+*/
