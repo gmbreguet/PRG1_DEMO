@@ -1,6 +1,6 @@
 //---------------------------------------------------------
 // Demo           : 07_constructor
-// Fichier        : point.cpp
+// Fichier        : Point.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-07
 // But            : démontrer les bases des constructeurs
@@ -10,7 +10,7 @@
 
 #include <iostream>
 
-#include "point.h"
+#include "Point.h"
 
 using namespace std;
 

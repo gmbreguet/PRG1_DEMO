@@ -46,3 +46,8 @@ int main() {
    return EXIT_SUCCESS;
 }
 
+//    a1 : 835680
+//    a1 : 12
+//    a2 : 12
+//    a3 : 12
+//    a4 : 12
