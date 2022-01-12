@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 08_specialisation_partielle_class
-// Fichier        : 08_specialisation_partielle_class.cpp
+// Demo           : 08_specialisation_class
+// Fichier        : 08_specialisation_class.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-13
 // But            : démontrer l'algorithme utilisé pour sélectionner une class

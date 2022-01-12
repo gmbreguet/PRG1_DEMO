@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 08_specialisation_partielle_fonction
-// Fichier        : 08_specialisation_partielle_fonction.cpp
+// Demo           : 08_specialisation_fonction
+// Fichier        : 08_specialisation_fonction.cpp
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2021-12-13
 // But            : démontrer l'algorithme utilisé pour sélectionner une fonction
