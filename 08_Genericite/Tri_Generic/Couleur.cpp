@@ -23,7 +23,7 @@ ostream& operator << (ostream& os, const Couleur& c) {
 
 //---------------------------------------------------------
 bool Couleur::operator < (const Couleur& c) const {
-   return this->couleur < c.couleur;
+   return couleur < c.couleur;
 }
 
 //---------------------------------------------------------
