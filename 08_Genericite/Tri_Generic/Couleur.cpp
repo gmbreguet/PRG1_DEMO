@@ -15,7 +15,6 @@ using namespace std;
 const string Couleur::COULEUR[] = {"black",  "white", "red",   "green",    "blue", "cyan", "magenta",
                                    "yellow", "lime",  "brown", "darkgray", "gray", "lightgray",
                                    "olive",  "orange", "pink", "purple",   "teal", "violet"};
-
 //---------------------------------------------------------
 ostream& operator << (ostream& os, const Couleur& c) {
    os << string(c);

@@ -15,6 +15,7 @@
 #include <iostream>
 
 class Couleur {
+   // utilise string(couleur) => friend pas directement nécessaire
    friend std::ostream& operator << (std::ostream& os, const Couleur& c);
 
 public:
@@ -33,5 +34,6 @@ private:
    static const std::string COULEUR[];
    Liste couleur;
 };
+
 
 #endif /* COULEUR_H */
