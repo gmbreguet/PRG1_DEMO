@@ -43,7 +43,7 @@ int main () {
    VectCouleur vCouleur  = {Couleur::Liste::ORANGE, Couleur::Liste::GRAY, Couleur::Liste::CYAN, Couleur::Liste::RED};
    
    //-------------------------------------
-   // de manière générique
+   // tris génériques
    test(vInt);
    test(vString);
    test(vCouleur);
