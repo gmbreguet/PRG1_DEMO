@@ -42,10 +42,6 @@ int main () {
    VectString  vString   = {"pomme", "citron", "orange", "banane"};
    VectCouleur vCouleur  = {Couleur::Liste::ORANGE, Couleur::Liste::GRAY, Couleur::Liste::CYAN, Couleur::Liste::RED};
    
-   Couleur c(Couleur::Liste::ORANGE);
-   cout  << string(c) << endl;
-   cout  << (string)c << endl;
-
    //-------------------------------------
    // tris génériques
    test(vInt);

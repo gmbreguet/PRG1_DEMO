@@ -11,8 +11,6 @@
 #ifndef triImpl_h
 #define triImpl_h
 
-using namespace std;
-
 //--------------------------------------------------------------
 template <typename T>
 void echanger (T& gauche, T& droite) {

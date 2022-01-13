@@ -11,9 +11,6 @@
 #ifndef tri_h
 #define tri_h
 
-#include <iostream>
-#include <vector>
-
 //---------------------------------------------------------
 template <typename T>
 void echanger (T&, T&);
