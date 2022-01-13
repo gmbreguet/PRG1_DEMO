@@ -17,7 +17,7 @@ void echanger (T&, T&);
 
 //---------------------------------------------------------
 template <typename T>
-void trier    (T& t);
+void trier (T& t);
 
 //---------------------------------------------------------
 #include "triImpl.h"
