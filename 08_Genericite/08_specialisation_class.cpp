@@ -85,7 +85,7 @@ int main() {
    //------------------------------------------------
 // C<int, int>   c11(1, 2);      //  {1 2 3 4} ∩ {1 2 3  } => {  2 3  } => ambiguous
 // C<int, int>   c21(1, 2);      //  {1 2 3 4} ∩ {1 2 3  } => {  2 3  } => ambiguous
-   C<int, char>  c23(1, 2);      //  {1 2 3 4} ∩ {1   3  } => {1      } => 3) C<int, char>
+   C<int, char>  c23(1, 2);      //  {1 2 3 4} ∩ {1   3  } => {    3  } => 3) C<int, char>
    C<int, float> c24(1, 2);      //  {1 2 3 4} ∩ {1   3 4} => {      4} => 4) C<int, float>
 
    return EXIT_SUCCES;
