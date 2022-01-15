@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 08_specialisation_fonction
 // Fichier        : 08_specialisation_fonction.cpp
+// Version        : 02 - 2022.01.15
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer l'algorithme utilisé pour sélectionner une fonction
 //                  en cas de spécialisation et de surcharge
 //                  CHAQUE SELECTION EST ILLUSTREE EN DETAIS
@@ -48,23 +48,28 @@ void f(int t, double d);
 
 int main() {
    //------------------------------------------------
-   // fonctions génériques
-   //------------------------------------------------
    // par déduction
+   //------------------------------------------------
    cout << "11) ";    f('a', 'b');           // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          types exactes
    cout << "12) ";    f(1.2, 3);             // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          types exactes
    cout << "13) ";    f(1, 2.3f);            // {1  4 5} ∩ {1  4  } => {1  4  } => 4 f<int, U>        surcharge
    cout << "14) ";    f(1, 2);               // {1  4 5} ∩ {1  4  } => {1  4  } => 4 f<int, U>        surcharge
    cout << "15) ";    f(1, 2.3);             // {1  4 5} ∩ {1  4 5} => {1  4 5} => 5 f<int, double>   fonction ordinaire (non générique)
 
-   // par déduction et seules les fonctions génériques sont considérées
+   //------------------------------------------------
+   // par déduction
+   // avec <> seules les fonctions génériques sont considérées
+   //------------------------------------------------
    cout << "21) ";    f<>('a', 'b');         // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          types exactes
    cout << "22) ";    f<>(1.2, 3);           // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          types exactes
    cout << "23) ";    f<>(1, 2.3f);          // {1  4  } ∩ {1  4  } => {1  4  } => 4 f<int, U>        surcharge
    cout << "24) ";    f<>(1, 2);             // {1  4  } ∩ {1  4  } => {1  4  } => 4 f<int, U>        surcharge
    cout << "25) ";    f<>(1, 2.3);           // {1  4  } ∩ {1  4  } => {1  4  } => 4 f<int, U>        surcharge
 
+   //------------------------------------------------
    // par déduction partielle
+   // avec <...> seules les fonctions génériques sont considérées
+   //------------------------------------------------
    cout << "31) ";    f<int>('a', 'b');      // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          type exact, sinon il y aurait ajustement de type
    cout << "32) ";    f<int>(1.2, 3);        // {1  4  } ∩ {1  4  } => {1  4  } => 4 f<int, U>        surcharge (warning : 1.2 converti en int)
    cout << "33) ";    f<int>(1, 2.3f);       // {1  4  } ∩ {1  4  } => {1  4  } => 3 f<int, float>    /!\ spécialisation disponible !!
@@ -76,7 +81,9 @@ int main() {
    //                                            |  *----------------- int       => 1er  paramètre effectif converti en int
    //                                            *-------------------- <int, ?>  => 1er  paramètre effectif converti en int
 
+   //------------------------------------------------
    // les paramètres génériques sont explicitement fixés
+   //------------------------------------------------
    cout << "41) ";    f<int, int>('a', 'b'); // {1     } ∩ {1     } => {1     } => 1 f<T, U>
    cout << "42) ";    f<int, int>(1.2, 3);   // {1     } ∩ {1     } => {1     } => 1 f<T, U>          warning : 1.2  converti en int
    cout << "43) ";    f<int, int>(1, 2.3f);  // {1     } ∩ {1     } => {1     } => 1 f<T, U>          warning : 2.3f converti en int
