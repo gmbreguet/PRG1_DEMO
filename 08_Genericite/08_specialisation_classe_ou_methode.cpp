@@ -1,9 +1,9 @@
 //---------------------------------------------------------
-// Demo           : 08_specialisation_ou_surcharge
-// Fichier        : 08_specialisation_ou_surcharge.cpp
+// Demo           : 08_specialisation_classe_ou_methode
+// Fichier        : 08_specialisation_classe_ou_methode.cpp
 // Version        : 01 - 2022.01.15
 // Auteur(s)      : BREGUET Guy-Michel
-// But            : spécialisation ou surcharge
+// But            : spécialisation classe ou méthode
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
