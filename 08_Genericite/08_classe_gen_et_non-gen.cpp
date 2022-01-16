@@ -53,7 +53,7 @@ private:
 //---------------------------------------------------
 int main() {
 
-// C c;
+   C c(1, 2);     // classe non-générique
 
    return EXIT_SUCCESS;
 }
