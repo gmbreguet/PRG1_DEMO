@@ -48,7 +48,7 @@ void f(int t, double d);
 
 int main() {
    //------------------------------------------------
-   // par déduction
+   // déduction des types génériques
    //------------------------------------------------
    cout << "11) ";    f('a', 'b');           // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          types exactes
    cout << "12) ";    f(1.2, 3);             // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          types exactes
@@ -57,7 +57,7 @@ int main() {
    cout << "15) ";    f(1, 2.3);             // {1  4 5} ∩ {1  4 5} => {1  4 5} => 5 f<int, double>   fonction ordinaire (non générique)
 
    //------------------------------------------------
-   // par déduction
+   // déduction des types génériques
    // avec <> seules les fonctions génériques sont considérées
    //------------------------------------------------
    cout << "21) ";    f<>('a', 'b');         // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          types exactes
@@ -67,7 +67,7 @@ int main() {
    cout << "25) ";    f<>(1, 2.3);           // {1  4  } ∩ {1  4  } => {1  4  } => 4 f<int, U>        surcharge
 
    //------------------------------------------------
-   // par déduction partielle
+   // déduction partielle des types génériques
    // avec <...> seules les fonctions génériques sont considérées
    //------------------------------------------------
    cout << "31) ";    f<int>('a', 'b');      // {1  4  } ∩ {1  4  } => {1  4  } => 1 f<T, U>          type exact, sinon il y aurait ajustement de type
