@@ -14,7 +14,7 @@
 using namespace std;
 
 //---------------------------------------------------
-// 1) class générique
+// 1) classe générique
 //---------------------------------------------------
 template <typename T, typename U>
 class C {
@@ -26,7 +26,7 @@ private:
 };
 
 //---------------------------------------------------
-// 2) class générique spécialisée
+// 2) classe générique spécialisée
 //---------------------------------------------------
 template <typename T>
 class C<T, T> {
@@ -38,22 +38,22 @@ private:
 };
 
 //---------------------------------------------------
-// 3) class non-générique
+// 3) classe non-générique
 // => ne compile pas
 //---------------------------------------------------
-// class C {
-// public:
-//    C(int i1, int i2) : i1(i1), i2(i2) { cout << "3) C" << endl; }
-// private:
-//    int i1;
-//    int i2;
-// };
+class C {
+public:
+   C(int i1, int i2) : i1(i1), i2(i2) { cout << "3) C" << endl; }
+private:
+   int i1;
+   int i2;
+};
 
 
 //---------------------------------------------------
 int main() {
 
-   C c;           // class non générique
+// C c;
 
    return EXIT_SUCCESS;
 }
