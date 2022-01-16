@@ -43,11 +43,9 @@ ostream& operator<< (ostream& os, const Coord<T>& c) {
 //---------------------------------------------------
 template <typename T>
 class Coord {
-
    friend ostream& operator<< <T>(ostream& os, const Coord<T>& c);
 
 public:
-
    Coord(T x, T y) : x(x), y(y) {};
 
    bool operator< (const Coord& c) const {
