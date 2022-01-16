@@ -1,7 +1,7 @@
 //---------------------------------------------------------
 // Demo           : 08_specialisation_classe
 // Fichier        : 08_specialisation_classe.cpp
-// Version        : 02 - 2022.01.-15
+// Version        : 02 - 2022.01.15
 // Auteur(s)      : BREGUET Guy-Michel
 // But            : démontrer l'algorithme utilisé pour sélectionner une class
 //                  en cas de spécialisation et de surcharge
@@ -15,7 +15,7 @@
 using namespace std;
 
 //---------------------------------------------------
-// 1) class générique
+// 1) classe générique
 //---------------------------------------------------
 template <typename T, typename U>
 class C {
