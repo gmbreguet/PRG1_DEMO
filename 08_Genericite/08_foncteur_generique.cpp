@@ -46,7 +46,17 @@ class Coord {
    friend ostream& operator<< <T>(ostream& os, const Coord<T>& c);
 
 public:
+   Coord() : x(0), y(0) {};
+
    Coord(T x, T y) : x(x), y(y) {};
+
+   Coord(const Coord& c) { x = c.y; y = c.y; }; 
+
+   Coord& operator= (const Coord& c) {
+      x = c.x;
+      y = c.y;
+      return *this;
+   }
 
    bool operator< (const Coord& c) const {
       return hypot(x, y) < hypot(c.x, c.y); }
@@ -61,7 +71,6 @@ private:
 
 //---------------------------------------------------
 // foncteur de comparaison
-// nb les & pour éviter les copies
 template <typename T>
 class LowerThan {
 public:
@@ -76,11 +85,12 @@ template <typename T>
 void test (const vector<T>& vecteur, const T& valeur) {
    cout << endl;
    cout << "vecteur " << vecteur << endl; 
-   cout << "nbre de " << valeur << " : " << count(vecteur.begin(), vecteur.end(), valeur) << endl;
-   cout << "nbre <  " << valeur << " : " << count_if(vecteur.begin(), vecteur.end(), LowerThan(valeur)) << endl;
+   cout << "nbre de " << valeur  << " : " << count   (vecteur.begin(), vecteur.end(),           valeur)  << endl;
+   cout << "nbre <  " << valeur  << " : " << count_if(vecteur.begin(), vecteur.end(), LowerThan(valeur)) << endl;
 }
 
 //---------------------------------------------------
+// exemples de using génériques
 using VectInt        = vector<int>;
 using VectDouble     = vector<double>;
 using VectCoordInt   = vector<Coord<int>>;
