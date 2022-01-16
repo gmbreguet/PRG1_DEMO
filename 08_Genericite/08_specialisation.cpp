@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 08_specialisation
 // Fichier        : 08_specialisation.cpp
+// Version        : 02 - 2022.01.15
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer l'algorithme utilisé pour sélectionner une fonction
 //                  en cas de spécialisation et de surcharge
 // Modifications  :
