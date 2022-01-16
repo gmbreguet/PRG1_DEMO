@@ -89,26 +89,26 @@ using VectCoordInt   = vector<Coord<int>>;
 int main() {
 
    // vecteurs à traiter
-   VectInt      vInt        = {4,  8,  3,  9,  8,  2,  1,  5,  6};
-   VectDouble   vDouble     = {4., 8., 3., 9., 8., 2., 1., 5., 6.};
+   VectInt      vInt        = {4,   8,   3,   9,   8,   2,   1,   5,   6};
+   VectDouble   vDouble     = {4.1, 8.1, 3.1, 9.1, 8.1, 2.1, 1.1, 5.1, 6.1};
    VectCoordInt vCoordInt   = {{0, 1}, {1, 0}, {4, 5}, {1, 4}, {4, 5}};
 
    test<int>(vInt, 8);
-   test<double>(vDouble, 8.);
+   test<double>(vDouble, 8.1);
    test<Coord<int>>(vCoordInt, {4, 5});
 
    return EXIT_SUCCESS;
 }
 
-// vecteur [4, 8, 3, 9, 8, 2, 1, 5, 6]
-// nbre de 8 : 2
-// nbre <  8 : 6
-// 
-// vecteur [4, 8, 3, 9, 8, 2, 1, 5, 6]
-// nbre de 8 : 2
-// nbre <  8 : 6
-// 
-// vecteur [(0, 1), (1, 0), (4, 5), (1, 4), (4, 5)]
-// nbre de (4, 5) : 2
-// nbre <  (4, 5) : 3
+//    vecteur [4, 8, 3, 9, 8, 2, 1, 5, 6]
+//    nbre de 8 : 2
+//    nbre <  8 : 6
+//    
+//    vecteur [4.1, 8.1, 3.1, 9.1, 8.1, 2.1, 1.1, 5.1, 6.1]
+//    nbre de 8.1 : 2
+//    nbre <  8.1 : 6
+//    
+//    vecteur [(0, 1), (1, 0), (4, 5), (1, 4), (4, 5)]
+//    nbre de (4, 5) : 2
+//    nbre <  (4, 5) : 3
 
