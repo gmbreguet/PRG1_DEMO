@@ -46,11 +46,9 @@ class Coord {
    friend ostream& operator<< <T>(ostream& os, const Coord<T>& c);
 
 public:
-   Coord() : x(0), y(0) {};
-
-   Coord(T x, T y) : x(x), y(y) {};
-
-   Coord(const Coord& c) { x = c.x; y = c.y; }; 
+   Coord() : x(0), y(0) {}
+   Coord(T x, T y) : x(x), y(y) {}
+   Coord(const Coord& c) { x = c.x; y = c.y; } 
 
    Coord& operator= (const Coord& c) {
       x = c.x;
@@ -76,10 +74,10 @@ private:
 template <typename T>
 class LowerThan {
 public:
-   LowerThan(const T& t) : t(t) {};
-   bool operator() (const T& other) { return other < t; }; 
+   LowerThan(const T& t) : ref(t) {};
+   bool operator() (const T& actual) { return actual < ref; }; 
 private:
-   const T& t;
+   const T& ref;
 };
 
 //---------------------------------------------------

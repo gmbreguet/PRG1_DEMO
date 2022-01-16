@@ -44,17 +44,18 @@ class Coord {
    friend ostream& operator<< <T>(ostream& os, const Coord<T>& c);
 
 public:
-   Coord() : x(0), y(0) {};
-
-   Coord(T x, T y) : x(x), y(y) {};
-
-   Coord(const Coord& c) { x = c.x; y = c.y; }; 
+   Coord() : x(0), y(0) {}
+   Coord(T x, T y) : x(x), y(y) {}
+   Coord(const Coord& c) { x = c.x; y = c.y; } 
 
    Coord& operator= (const Coord& c) {
       x = c.x;
       y = c.y;
       return *this;
    }
+
+   // nécessaire pour le foncteur Plus
+   Coord operator+ (const Coord& c) const { return {x + c.x, y + c.y}; }
 
 private:
    T x;
@@ -66,19 +67,26 @@ private:
 template <typename T>
 class Plus {
 public:
-   Plus(const T& ) : valeur(t) {};
-   bool operator() (const T& i) { return i + valeur; }; 
+   Plus(const T& t) : valeur(t) {};
+   T operator() (const T& actuel) { return actuel + valeur; }; 
 private:
    const T& valeur;
 };
 
 //---------------------------------------------------
+template <typename T, typename Action>
+void parcourir(vector<T>& vecteur, Action action) {
+   for (T& t : vecteur)
+      t = action(t);
+}
+
+//---------------------------------------------------
 template <typename T>
-void test (const vector<T>& vecteur, const T& valeur) {
+void test (vector<T>& vecteur, const T& valeur) {
    cout << endl;
    cout << "vecteur " << vecteur << endl; 
-   cout << "nbre de " << valeur  << " : " << count   (vecteur.begin(), vecteur.end(),           valeur)  << endl;
-   cout << "nbre <  " << valeur  << " : " << count_if(vecteur.begin(), vecteur.end(), LowerThan(valeur)) << endl;
+   parcourir(vecteur, Plus(valeur));
+   cout << "vecteur " << vecteur << endl; 
 }
 
 //---------------------------------------------------
@@ -95,10 +103,19 @@ int main() {
    VectDouble   vDouble     = {4.1, 8.1, 3.1, 9.1, 8.1, 2.1, 1.1, 5.1, 6.1};
    VectCoordInt vCoordInt   = {{0, 1}, {1, 0}, {4, 5}, {1, 4}, {4, 5}};
 
-   test<int>(vInt, 8);
-   test<double>(vDouble, 8.1);
-   test<Coord<int>>(vCoordInt, {4, 5});
+   test<int>(vInt, 2);
+   test<double>(vDouble, 2.1);
+   test<Coord<int>>(vCoordInt, {1, 2});
 
    return EXIT_SUCCESS;
 }
+
+//    vecteur [4, 8, 3, 9, 8, 2, 1, 5, 6]
+//    vecteur [6, 10, 5, 11, 10, 4, 3, 7, 8]
+//    
+//    vecteur [4.1, 8.1, 3.1, 9.1, 8.1, 2.1, 1.1, 5.1, 6.1]
+//    vecteur [6.2, 10.2, 5.2, 11.2, 10.2, 4.2, 3.2, 7.2, 8.2]
+//    
+//    vecteur [(0, 1), (1, 0), (4, 5), (1, 4), (4, 5)]
+//    vecteur [(1, 3), (2, 2), (5, 7), (2, 6), (5, 7)]
 
