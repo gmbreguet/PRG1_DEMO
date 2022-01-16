@@ -75,9 +75,9 @@ private:
 template <typename T>
 void test (const vector<T>& vecteur, const T& valeur) {
    cout << endl;
-   cout << "vecteur " << vecteur << endl; 
-   cout << "nbre de " << valeur << " : " << count(vecteur.begin(), vecteur.end(), valeur) << endl;
-   cout << "nbre <  " << valeur << " : " << count_if(vecteur.begin(), vecteur.end(), LowerThan(valeur)) << endl;
+   cout << "vecteur : " << vecteur << endl; 
+   cout << "nbre de   " << valeur << " : " << count(vecteur.begin(), vecteur.end(), valeur) << endl;
+   cout << "nbre <    " << valeur << " : " << count_if(vecteur.begin(), vecteur.end(), LowerThan(valeur)) << endl;
 }
 
 //---------------------------------------------------
@@ -100,15 +100,14 @@ int main() {
    return EXIT_SUCCESS;
 }
 
-// vecteur [4, 8, 3, 9, 8, 2, 1, 5, 6]
-// nbre de 8 : 2
-// nbre <  8 : 6
-// 
-// vecteur [4, 8, 3, 9, 8, 2, 1, 5, 6]
-// nbre de 8 : 2
-// nbre <  8 : 6
-// 
-// vecteur [(0, 1), (1, 0), (4, 5), (1, 4), (4, 5)]
-// nbre de (4, 5) : 2
-// nbre <  (4, 5) : 3
-
+   // vecteur : [4, 8, 3, 9, 8, 2, 1, 5, 6]
+   // nbre de 8 : 2
+   // nbre < a 8 : 6
+   // 
+   // vecteur : [4, 8, 3, 9, 8, 2, 1, 5, 6]
+   // nbre de 8 : 2
+   // nbre < a 8 : 6
+   // 
+   // vecteur : [(0, 1), (1, 0), (4, 5), (1, 4), (4, 5)]
+   // nbre de (4, 5) : 2
+   // nbre < a (4, 5) : 3
