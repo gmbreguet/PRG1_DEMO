@@ -22,7 +22,7 @@ const string CHIFFRE[] = {"ZERO", "UN",  "DEUX", "TROIS", "QUATRE",
                           "CINQ", "SIX", "SEPT", "HUIT",  "NEUF"};
 
 //-------------------------------------------------------------------
-ostream& operator<<(ostream& os, const Chiffre& c);
+ostream& operator<< (ostream& os, const Chiffre& c);
 Chiffre& operator++ (Chiffre& c);
 
 //-------------------------------------------------------------------
