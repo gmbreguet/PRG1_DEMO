@@ -1,6 +1,6 @@
 //---------------------------------------------------------
-// Demo           : 08_class_en_et_non-gen
-// Fichier        : 08_sclass_en_et_non-gen
+// Demo           : 08_classe_en_et_non-gen
+// Fichier        : 08_classe_en_et_non-gen.cpp
 // Version        : 01 - 2022.01.15
 // Auteur(s)      : BREGUET Guy-Michel
 // But            : peut-on surcharger une classe ?
