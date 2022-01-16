@@ -11,7 +11,7 @@
 #include <cstdlib>
 #include <iostream>
 #include <cmath>        // hypot
-#include <algorithm>
+#include <algorithm>    // count, count_if
 #include <vector>
 
 using namespace std;
