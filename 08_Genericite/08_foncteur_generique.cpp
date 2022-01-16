@@ -50,7 +50,7 @@ public:
 
    Coord(T x, T y) : x(x), y(y) {};
 
-   Coord(const Coord& c) { x = c.y; y = c.y; }; 
+   Coord(const Coord& c) { x = c.x; y = c.y; }; 
 
    Coord& operator= (const Coord& c) {
       x = c.x;
@@ -58,9 +58,11 @@ public:
       return *this;
    }
 
+   // distance de (0, 0)
    bool operator< (const Coord& c) const {
       return hypot(x, y) < hypot(c.x, c.y); }
 
+   // même position
    bool operator== (const Coord& c) const {
       return x == c.x and y == c.y; }
 
