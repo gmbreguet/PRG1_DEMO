@@ -1,9 +1,9 @@
 //---------------------------------------------------------
-// Demo           : 08_parcours_action
-// Fichier        : 08_parcours_action.cpp
+// Demo           : 08_parcours_fonction
+// Fichier        : 08_parcours_fonction.cpp
 // Version        : 01 - 2022.01.16
 // Auteur(s)      : BREGUET Guy-Michel
-// But            : exemple de foncteur générique utilisé comme action dans un parcours
+// But            : exemple de foncteur générique utilisé comme fonction dans un parcours
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
@@ -63,7 +63,7 @@ private:
 };
 
 //---------------------------------------------------
-// foncteur d'action
+// foncteur comme paramètre générique de fonction
 template <typename T>
 class Plus {
 public:
@@ -74,10 +74,10 @@ private:
 };
 
 //---------------------------------------------------
-template <typename T, typename Action>
-void parcourir(vector<T>& vecteur, Action action) {
+template <typename T, typename Fonction>
+void parcourir(vector<T>& vecteur, Fonction fonction) {
    for (T& t : vecteur)
-      t = action(t);
+      t = fonction(t);
 }
 
 //---------------------------------------------------
