@@ -39,6 +39,6 @@ private:
    std::vector<T> tab;
 };
 
-#include "Pile_G_impl.h"
+#include "Pile_G_impl.hpp"
 
 #endif /* pile_g_h */

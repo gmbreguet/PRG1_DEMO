@@ -18,28 +18,27 @@
 //---------------------------------------------------
 template <typename T>
 Pile<T>::Pile(size_t capacite)
-: capacite(capacite), taille(0) {
+: capacite(capacite) {
+   taille = 0;
    tab.reserve(capacite);
 }
 
 //---------------------------------------------------
 template <typename T>
 bool Pile<T>::empiler(const T& valeur) {
-   if (taille < capacite) {
-      tab[taille++] = valeur;
-      return true;
-   }
-   return false;
+   if (taile >= capacite)
+      return false;
+   tab[taille++] = valeur;
+   return true;
 }
 
 //---------------------------------------------------
 template <typename T>
 bool Pile<T>::depiler() {
-   if (taille) {
-      --taille;
-      return true;
-   }
-   return false;
+   if (taille == 0)
+      return false;
+   --taille;
+   return true;
 }
 
 //---------------------------------------------------

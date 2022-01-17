@@ -12,7 +12,7 @@
 
 #include <cstdlib>
 #include <iostream>
-#include "Pile_G.h"
+#include "Pile_G.hpp"
 
 using namespace std;
 
