@@ -13,7 +13,7 @@
 #ifndef pile_g_impl_h
 #define pile_g_impl_h
 
-using namespace std;   
+#include <cassert>
 
 //---------------------------------------------------
 template <typename T>

@@ -19,6 +19,8 @@ using namespace std;
 //---------------------------------------------------
 int main() {
 
+   cout << "-------------------------------" << endl;
+   cout << "empiler 10 valeurs ..."          << endl;
    Pile<int> pile(10);
    int i=0;
    while (not pile.estPleine()) {
@@ -27,20 +29,24 @@ int main() {
    }
 
    cout << endl;
+   cout << "-------------------------------" << endl;
+   cout << "lecture : at() et []"            << endl;
    cout << "pile[5]    : " << pile[5]        << endl;
    cout << "pile.at(5) : " << pile.at(5)     << endl;
 
    cout << endl;
+   cout << "-------------------------------" << endl;
+   cout << "ecriture : at() et []"           << endl;
    cout << "pile[5]    = 10"                 << endl;
    pile[5] = 10;
    cout << "pile[5]    : " << pile[5]        << endl;
 
-   cout << endl;
    cout << "pile.at(5) = 20" << endl;
    pile.at(5) = 20;
    cout << "pile.at(5) : " << pile.at(5)     << endl;
 
    cout << endl;
+   cout << "-------------------------------" << endl;
    while (not pile.estVide()) {
       cout << "dernier : " << pile.dernier() << endl;
       pile.depiler();
