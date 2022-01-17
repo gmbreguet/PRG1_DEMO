@@ -39,21 +39,21 @@ private:
 
 //---------------------------------------------------
 // 3) classe non-générique
-// => ne compile pas
+// => NE COMPILE PAS !!
 //---------------------------------------------------
-class C {
-public:
-   C(int i1, int i2) : i1(i1), i2(i2) { cout << "3) C" << endl; }
-private:
-   int i1;
-   int i2;
-};
+// class C {
+// public:
+//    C(int i1, int i2) : i1(i1), i2(i2) { cout << "3) C" << endl; }
+// private:
+//    int i1;
+//    int i2;
+// };
 
 
 //---------------------------------------------------
 int main() {
 
-   C c(1, 2);     // classe non-générique
+   C c(1, 2);     // => classe spécialisée
 
    return EXIT_SUCCESS;
 }
