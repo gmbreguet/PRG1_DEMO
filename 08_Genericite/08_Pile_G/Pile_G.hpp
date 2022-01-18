@@ -22,7 +22,7 @@ public:
    Pile(size_t capacite);
    bool empiler(const T& valeur);               // => false si pleine
    bool depiler();                              // => false si vide
-   T    dernier();                              // => abort si vide
+   T    dernier() const;                        // => abort si vide
 
    bool estVide()   const;
    bool estPleine() const;

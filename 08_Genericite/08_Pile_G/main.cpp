@@ -12,22 +12,16 @@
 
 #include <cstdlib>
 #include <iostream>
-<<<<<<< HEAD
-#include "Pile_G.h"
-=======
+
 #include "Pile_G.hpp"
->>>>>>> 749170ac5cb284494b89a8735f6242ead511b4f6
 
 using namespace std;
 
 //---------------------------------------------------
 int main() {
 
-<<<<<<< HEAD
-=======
    cout << "-------------------------------" << endl;
    cout << "empiler 10 valeurs ..."          << endl;
->>>>>>> 749170ac5cb284494b89a8735f6242ead511b4f6
    Pile<int> pile(10);
    int i=0;
    while (not pile.estPleine()) {
@@ -36,37 +30,25 @@ int main() {
    }
 
    cout << endl;
-<<<<<<< HEAD
-=======
    cout << "-------------------------------" << endl;
    cout << "lecture : at() et []"            << endl;
->>>>>>> 749170ac5cb284494b89a8735f6242ead511b4f6
    cout << "pile[5]    : " << pile[5]        << endl;
    cout << "pile.at(5) : " << pile.at(5)     << endl;
 
    cout << endl;
-<<<<<<< HEAD
-=======
    cout << "-------------------------------" << endl;
    cout << "ecriture : at() et []"           << endl;
->>>>>>> 749170ac5cb284494b89a8735f6242ead511b4f6
    cout << "pile[5]    = 10"                 << endl;
    pile[5] = 10;
    cout << "pile[5]    : " << pile[5]        << endl;
 
-<<<<<<< HEAD
    cout << endl;
-=======
->>>>>>> 749170ac5cb284494b89a8735f6242ead511b4f6
    cout << "pile.at(5) = 20" << endl;
    pile.at(5) = 20;
    cout << "pile.at(5) : " << pile.at(5)     << endl;
 
    cout << endl;
-<<<<<<< HEAD
-=======
    cout << "-------------------------------" << endl;
->>>>>>> 749170ac5cb284494b89a8735f6242ead511b4f6
    while (not pile.estVide()) {
       cout << "dernier : " << pile.dernier() << endl;
       pile.depiler();
@@ -75,8 +57,6 @@ int main() {
    return EXIT_SUCCESS;
 }
 
-<<<<<<< HEAD
-=======
 //    -------------------------------
 //    empiler 10 valeurs ...
 //    empiler(0)
@@ -113,4 +93,3 @@ int main() {
 //    dernier : 2
 //    dernier : 1
 //    dernier : 0
->>>>>>> 749170ac5cb284494b89a8735f6242ead511b4f6

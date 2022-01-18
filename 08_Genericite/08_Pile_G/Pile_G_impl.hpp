@@ -43,7 +43,7 @@ bool Pile<T>::depiler() {
 
 //---------------------------------------------------
 template <typename T>
-T Pile<T>::dernier() {
+T Pile<T>::dernier() const {
    assert(taille);
    return tab[taille-1];
 }
