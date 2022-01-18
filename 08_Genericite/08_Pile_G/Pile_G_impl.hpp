@@ -26,7 +26,7 @@ Pile<T>::Pile(size_t capacite)
 //---------------------------------------------------
 template <typename T>
 bool Pile<T>::empiler(const T& valeur) {
-   if (taile >= capacite)
+   if (taille >= capacite)
       return false;
    tab[taille++] = valeur;
    return true;

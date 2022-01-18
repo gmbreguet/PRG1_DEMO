@@ -1,14 +1,14 @@
 //---------------------------------------------------------
 // Demo           : 07_methode_static
 // Fichier        : classe.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-07
 // But            : démontrer méthodes static
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
 
-#include "Classe.h"
+#include "Classe.hpp"
 
 #include <iostream>  // cout et cin
 #include <string>

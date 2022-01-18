@@ -1,5 +1,5 @@
 MAIN    = main.cpp
-OTHERS  = Couleur.cpp tri.h
+OTHERS  = Couleur.cpp
 OUTPUT  = main.out
 
 VERSION = -std=c++20

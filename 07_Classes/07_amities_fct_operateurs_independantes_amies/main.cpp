@@ -1,15 +1,15 @@
 //---------------------------------------------------------
 // Demo           : 07_amities_fct_operateurs_independantes_amies
 // Fichier        : main.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : démontrer des fonctions et classes amies
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
 
 #include <cstdlib>
-#include "vecteur.h"
+#include "vecteur.hpp"
 
 using namespace std;
 

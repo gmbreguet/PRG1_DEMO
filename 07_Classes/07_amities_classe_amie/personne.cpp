@@ -1,14 +1,14 @@
 //---------------------------------------------------------
 // Demo           : 07_protected
 // Fichier        : personne.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : implémentation de la classe personne
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
 
-#include "personne.h"
+#include "personne.hpp"
 #include <iostream>
 
 using namespace std;

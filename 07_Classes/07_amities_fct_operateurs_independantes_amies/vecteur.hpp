@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_amities_fct_operateurs_independantes_amies
 // Fichier        : vecteur.h
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : operateurs sur vector
 // Modifications  :
 // Remarque(s)    : NILL

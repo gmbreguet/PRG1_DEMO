@@ -1,15 +1,15 @@
 //---------------------------------------------------------
 // Demo           : 04_librairie
 // Fichier        : annexes.cpp (le corps de sous-programmes du .h)
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-09-15
 // But            : ne contient que les définitions
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
 
 #include <iostream>
-#include "annexe.h"    // inclure la spec de ce .cpp
+#include "annexe.hpp"      // inclure la spec de ce .cpp
 
 using namespace std;
 

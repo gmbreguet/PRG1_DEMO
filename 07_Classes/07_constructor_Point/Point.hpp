@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_constructor
 // Fichier        : Point.h
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-07
 // But            : démontrer les bases des constructeurs
 // Modifications  :
 // Remarque(s)    : NILL
