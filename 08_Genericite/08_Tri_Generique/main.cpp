@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 08_Tri_Generique
 // Fichier        : main.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2022-01-12
 // But            : demontration d'un tri générique
 // Modifications  :
 // Remarque(s)    : NILL
@@ -12,8 +12,8 @@
 #include <string>
 #include <vector>
 
-#include "tri.h"
-#include "Couleur.h"
+#include "tri.hpp"
+#include "Couleur.hpp"
 
 using namespace std;
 

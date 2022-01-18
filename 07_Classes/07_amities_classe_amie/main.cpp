@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_amities_classe_amie
 // Fichier        : main.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : démontrer l'utilisation de classes amies
 // Modifications  :
 // Remarque(s)    : NILL
@@ -11,8 +11,8 @@
 #include <iostream>
 #include <cstdlib>
 
-#include "personne.h"
-#include "date.h"
+#include "personne.hpp"
+#include "date.hpp"
 
 using namespace std;
 

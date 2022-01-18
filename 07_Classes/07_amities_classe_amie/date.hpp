@@ -1,6 +1,7 @@
 //---------------------------------------------------------
 // Demo           : 07_protected
-// Fichier        : date.h
+// Fichier        : date.hpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
 // Date           : 2020-11-30
 // But            : classe date

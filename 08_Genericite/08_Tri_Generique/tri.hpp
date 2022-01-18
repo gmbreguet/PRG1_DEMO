@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 08_Tri_Generique
-// Fichier        : tri.h
+// Fichier        : tri.hpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2022-01-12
 // But            : tri générique
 // Modifications  :
 // Remarque(s)    : NILL
@@ -20,6 +20,6 @@ template <typename T>
 void trier (T& t);
 
 //---------------------------------------------------------
-#include "triImpl.h"
+#include "triImpl.hpp"
 
 #endif /* tri_h */

@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_amities_fct_independante_amie_de_plusieurs_classes
 // Fichier        : main.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : démontrer des fonctions et classes amies
 // Modifications  :
 // Remarque(s)    : NILL
@@ -10,8 +10,8 @@
 
 #include <iostream>
 #include <cstdlib>
-#include "c1.h"
-#include "c2.h"
+#include "c1.hpp"
+#include "c2.hpp"
 using namespace std;
 
 //--------------------------------------------------------

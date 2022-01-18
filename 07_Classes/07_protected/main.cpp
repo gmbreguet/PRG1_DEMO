@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_protected
 // Fichier        : main.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer l'utilisation d'une
 //                  propriété protected
 // Modifications  :
@@ -12,8 +12,8 @@
 #include <iostream>
 #include <cstdlib>
 
-#include "personne.h"
-#include "date.h"
+#include "personne.hpp"
+#include "date.hpp"
 
 using namespace std;
 

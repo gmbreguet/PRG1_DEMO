@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_constructor
 // Fichier        : main.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-07
 // But            : démontrer les bases des constructeurs
 // Modifications  :
 // Remarque(s)    : NILL
@@ -12,7 +12,7 @@
 #include <iostream>
 #include <vector>       // classe vector
 
-#include "Point.h"
+#include "Point.hpp"
 
 using namespace std;
 

@@ -1,14 +1,14 @@
 //---------------------------------------------------------
 // Demo           : 07_protected
 // Fichier        : date.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : implémentation de la classe date
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
 
-#include "date.h"
+#include "date.hpp"
 
 #include <iostream>
 using namespace std;
