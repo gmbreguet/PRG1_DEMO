@@ -48,12 +48,6 @@ public:
    Coord(T x, T y) : x(x), y(y) {}
    Coord(const Coord& c) { x = c.x; y = c.y; } 
 
-   Coord& operator= (const Coord& c) {
-      x = c.x;
-      y = c.y;
-      return *this;
-   }
-
    // nécessaire pour le foncteur Plus
    Coord operator+ (const Coord& c) const { return {x + c.x, y + c.y}; }
 

@@ -50,16 +50,12 @@ public:
    Coord(T x, T y) : x(x), y(y) {}
    Coord(const Coord& c) { x = c.x; y = c.y; } 
 
-   Coord& operator= (const Coord& c) {
-      x = c.x;
-      y = c.y;
-      return *this;
-   }
-
+   // nécessaire pour Coord::LowerThan
    // distance de (0, 0)
    bool operator< (const Coord& c) const {
       return hypot(x, y) < hypot(c.x, c.y); }
 
+   // nécessaire pour algorithm::count
    // même position
    bool operator== (const Coord& c) const {
       return x == c.x and y == c.y; }
