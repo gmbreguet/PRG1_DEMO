@@ -68,7 +68,7 @@ template <typename T>
 class Plus {
 public:
    Plus(const T& t) : valeur(t) {};
-   T operator() (const T& actuel) { return actuel + valeur; }; 
+   T operator() (const T& actuel) const { return actuel + valeur; }; 
 private:
    const T& valeur;
 };
