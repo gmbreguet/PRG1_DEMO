@@ -71,7 +71,7 @@ template <typename T>
 class LowerThan {
 public:
    LowerThan(const T& t) : ref(t) {};
-   bool operator() (const T& actual) { return actual < ref; }; 
+   bool operator() (const T& actual) const { return actual < ref; }; 
 private:
    const T& ref;
 };
