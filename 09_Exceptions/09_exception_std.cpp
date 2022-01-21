@@ -78,7 +78,9 @@ int main () {
                   
          switch (valeur) {
             // gestion des differents cas
-            case 1 : throw bad_alloc();
+             case 0 : throw int(0);
+               
+             case 1 : throw bad_alloc();
                
             case 2 : {
                Rectangle r(0, -1);
