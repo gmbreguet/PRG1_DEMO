@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 09_exception_std
 // Fichier        : 09_exception_std.cpp
+// Version        : 02 - 2022.01.21
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer l'utilisation l'utilisation standards
 // Modifications  :
 // Remarque(s)    : NILL
@@ -72,6 +72,15 @@ int main () {
    while (true) {
 
       try {
+         cout << "Choix possibles" << endl;
+         cout << "---------------" << endl;
+         cout << "0 => terminating with uncaught exception of type int" << endl;
+         cout << "1 => bad-alloc"      << endl;
+         cout << "2 => logic-error"    << endl;
+         cout << "3 => runtime-error"  << endl;
+         cout << "3 => quitter"        << endl;
+         cout << endl;
+
          // saisie du choix
          cout << "votre choix : ";
          cin  >> valeur;
@@ -97,7 +106,7 @@ int main () {
 //      //----------------------------------
 //      // essayer
 //      //----------------------------------
-//      // 1  sans ce catch (laissé en commentaire
+//      // 1  sans ce catch (laissé en commentaire)
 //      // 2  avec ce catch (à décommenter
 //      // 2a sans & => catch (exception   e) {...}
 //      // 2b avec & => catch (exception&  e) {...}
