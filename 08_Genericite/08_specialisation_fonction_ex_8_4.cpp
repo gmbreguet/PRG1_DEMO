@@ -34,8 +34,8 @@ int main() {
 // =====================================
 // Correction ex 8.4
 // =====================================
-// p => promotion nécessaire faut de type exacte
-// c => conversion nécessaire faut de type exacte
+// p => promotion  nécessaire faute de type exacte
+// c => conversion nécessaire faute de type exacte
 
 // ------------------------------------------------------------------------------------------------
 // 1) Avec les fonctions 1, 2, 3, 4
