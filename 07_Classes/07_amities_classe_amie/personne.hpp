@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_protected
-// Fichier        : personne.h
+// Fichier        : personne.hpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : classe personne ...
 //                  et utilisation de la clase date
 // Modifications  :
@@ -13,7 +13,7 @@
 #define Personne_H
 
 #include <string>
-#include "date.h"
+#include "date.hpp"
 
 
 class Personne {

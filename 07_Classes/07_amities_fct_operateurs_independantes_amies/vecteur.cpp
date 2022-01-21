@@ -1,14 +1,14 @@
 //---------------------------------------------------------
 // Demo           : 07_constructor
 // Fichier        : vecteur.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : operateurs sur vector
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
 
-#include "vecteur.h"
+#include "vecteur.hpp"
 
 using namespace std;
 

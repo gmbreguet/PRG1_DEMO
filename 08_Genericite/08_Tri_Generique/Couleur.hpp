@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 08_Tri_Generique
-// Fichier        : Couleur.h
+// Fichier        : Couleur.hpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2022-01-12
 // But            : Classe Couleur
 // Modifications  :
 // Remarque(s)    : NILL

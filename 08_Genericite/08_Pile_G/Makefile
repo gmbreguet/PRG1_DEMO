@@ -1,5 +1,5 @@
 MAIN    = main.cpp
-OTHERS  = Pile_G.h
+OTHERS  = 
 OUTPUT  = main.out
 
 VERSION = -std=c++20

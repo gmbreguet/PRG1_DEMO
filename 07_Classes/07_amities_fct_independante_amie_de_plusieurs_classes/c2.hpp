@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 07_amities_fct_independante_amie_de_plusieurs_classes
-// Fichier        : c2.h
+// Fichier        : c2.hpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : classe c2
 // Modifications  :
 // Remarque(s)    : NILL

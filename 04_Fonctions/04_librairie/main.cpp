@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 04_librairie
 // Fichier        : main.cpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-09-15
 // But            : exemple d'utilisation d'une
 //                  librairie personnelle
 // Modifications  :
@@ -12,7 +12,7 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "annexe.h"
+#include "annexe.hpp"
 
 using namespace std;
 

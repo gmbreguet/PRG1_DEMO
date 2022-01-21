@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 04_librairie
-// Fichier        : annexes.h (h pour header)
+// Fichier        : annexes.hpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-09-15
 // But            : ce fichier ne contient uniquement les
 //                  déclarations mises à disposition par la librairie
 //

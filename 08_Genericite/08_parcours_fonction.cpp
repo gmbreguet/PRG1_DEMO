@@ -48,12 +48,6 @@ public:
    Coord(T x, T y) : x(x), y(y) {}
    Coord(const Coord& c) { x = c.x; y = c.y; } 
 
-   Coord& operator= (const Coord& c) {
-      x = c.x;
-      y = c.y;
-      return *this;
-   }
-
    // nécessaire pour le foncteur Plus
    Coord operator+ (const Coord& c) const { return {x + c.x, y + c.y}; }
 
@@ -68,7 +62,7 @@ template <typename T>
 class Plus {
 public:
    Plus(const T& t) : valeur(t) {};
-   T operator() (const T& actuel) { return actuel + valeur; }; 
+   T operator() (const T& actuel) const { return actuel + valeur; }; 
 private:
    const T& valeur;
 };

@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 08_Tri_Generique
-// Fichier        : triImpl.h
+// Fichier        : triImpl.hpp
+// Version        : 02 - 2020-09-18
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2022-01-12
 // But            : tri générique
 // Modifications  :
 // Remarque(s)    : NILL
