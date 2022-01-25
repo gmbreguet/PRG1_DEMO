@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 09_exception_derivee
 // Fichier        : 09_exception_derivee.cpp
+// Version        : 02 - 2022-01-25
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer la création et l'utilisation
 //                  d'exception dérivées de logic_error et runtime_error
 // Modifications  :
