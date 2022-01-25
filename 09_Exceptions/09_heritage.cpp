@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 09_Heritage
 // Fichier        : 09_Heritage.cpp
+// Version        : 02 - 2022-01-25 / GMB
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer un cas simple d'héritage
 // Modifications  :
 // Remarque(s)    : NILL
@@ -18,7 +18,7 @@ using namespace std;
 class Point {
 public:
    Point(int x, int y);
-   void affiche() const;
+   void afficher() const;
 private:
    int x;
    int y;
@@ -32,8 +32,8 @@ Point::Point(int x, int y) {
 }
 
 //-------------------------------------------------
-// méthode affiche
-void Point::affiche() const {
+// méthode afficher
+void Point::afficher() const {
    cout << "(" << x << ", " << y << ")";
 }
 
@@ -43,7 +43,7 @@ void Point::affiche() const {
 class PointCouleur : public Point {
 public:
    PointCouleur(int x, int y, short c);
-   void affiche() const;
+   void afficher() const;
 private:
    short c;
 };
@@ -57,12 +57,12 @@ PointCouleur::PointCouleur(int x, int y, short c)
 }
 
 //-------------------------------------------------
-// méthode affiche utilisant la méthode Point::affiche
-void PointCouleur::affiche() const {
+// méthode afficher utilisant la méthode Point::afficher
+void PointCouleur::afficher() const {
    
-   // utilisation de Point::affiche
+   // utilisation de Point::afficher
    // the "this->" n'est pas obligatoire
-   this->Point::affiche();
+   this->Point::afficher();
    
    // afficher la propriété restante de PointCouleur
    cout << " c:" << c;
@@ -74,13 +74,13 @@ int main () {
    // -------------------------
    // objet de la classe mère
    Point p(1, 2);
-   p.affiche();
+   p.afficher();
    cout << endl;
 
    // -------------------------
    // objet de la classe derrivée
    PointCouleur pc(1, 2, 3);
-   pc.affiche();
+   pc.afficher();
    cout << endl;
 
    return EXIT_SUCCESS;
