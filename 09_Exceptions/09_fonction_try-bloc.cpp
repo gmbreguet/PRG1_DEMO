@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 09_fonction_try-bloc
 // Fichier        : 09_fonction_try-bloc.cpp
+// Version        : 02 - 2022-01-25 
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer la création et l'utilisation
 //                  des fonction try-bloc
 // Modifications  :
@@ -113,3 +113,22 @@ int main () {
 
    return EXIT_SUCCESS;
 }
+
+//    votre choix : 1
+//    exception dans C::C()
+//    C::C n is negative !!
+//    exception dans main
+//    C::C n is negative !!
+//
+//    votre choix : 2
+//    exception dans main
+//    oops !!
+//
+//    votre choix : 3
+//    exception dans C::C(double n)
+//    oops !!
+//    exception dans main
+//    oops !!
+//
+//    votre choix : 4
+
