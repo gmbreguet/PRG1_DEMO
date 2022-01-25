@@ -130,3 +130,13 @@ int main () {
 
    return EXIT_SUCCESS;
 }
+
+//    votre choix : 1
+//    EXCEPTION parametre
+//    73) Rectangle => longueur < 0
+//    
+//    votre choix : 2
+//    surface : EXCEPTION depassement
+//    87) surface => overflow
+//    votre choix : 3
+
