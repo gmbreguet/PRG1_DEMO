@@ -219,7 +219,8 @@ int main () {
 //    libc++abi: terminate_handler unexpectedly returned
 //    Abort trap: 6
 //
-//    => les fonctions de setTerminate sont appelées
+//    => la fonction de setTerminate est appelée
+//    NB : une seule fonction est possible
 //
 //-----------------------------------------------------------------------------
 // [[noreturn]]
