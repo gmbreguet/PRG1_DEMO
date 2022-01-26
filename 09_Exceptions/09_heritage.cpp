@@ -89,11 +89,11 @@ int main () {
 // | Classe    |  Classe dérivée |  Classe dérivée |  Classe dérivée |
 // | de base   |  Mode public    |  Mode private   |  Mode protected |
 // |-----------|-----------------|-----------------|-----------------|
-// | Private   |   Non hérité    |   Non hérité    |   Non hérité    |
+// | Public    |   Public        |   Private       |   Protected     |
 // |-----------|-----------------|-----------------|-----------------|
 // | Protected |   Protected     |   Private       |   Protected     |
 // |-----------|-----------------|-----------------|-----------------|
-// | Public    |   Public        |   Private       |   Protected     |
+// | Private   |   Non hérité    |   Non hérité    |   Non hérité    |
 // |-----------|-----------------|-----------------|-----------------|
 
 // Résultat
