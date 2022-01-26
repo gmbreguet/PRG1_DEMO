@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 05_enum_class
 // Fichier        : 05_enum_class.cpp
+// Version        : 02 2021-01-26
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2020-11-30
 // But            : démontrer l'utilisation de vecteur
 //                  et d'enum class
 // Modifications  :
