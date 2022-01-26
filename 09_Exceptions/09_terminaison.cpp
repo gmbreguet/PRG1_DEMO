@@ -95,7 +95,7 @@ int main () {
             case 1 : return EXIT_SUCCESS;    break;   // voir commentaire 1
             case 2 : return EXIT_FAILURE;    break;   // voir commentaire 2
             case 3 : exit(2);                break;   // voir commentaire 3
-            case 4 : f_EXIT_SUCCESS;         break;   // voir commentaire 4
+            case 4 : f_EXIT_SUCCESS();       break;   // voir commentaire 4
             case 5 : f_exit();               break;   // voir commentaire 5
             case 6 : f_quick_exit();         break;   // voir commentaire 6
             case 7 : f_Exit();               break;   // voir commentaire 7
@@ -111,41 +111,114 @@ int main () {
    return EXIT_SUCCESS;
 }
 
-//-------------------------------------------------
-// commentaires
-//-------------------------------------------------
+//-----------------------------------------------------------------------------
+// Résultats et commentaires ...
+//-----------------------------------------------------------------------------
 // 1) sortie normale
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 1
+//    
+//    destructeur (a)
+//    destructeur (b)
+//    appel de exit no 2
+//    appel de exit no 1
+//    
 //    => les 2 destructeurs sont appelés
 //    => les fonctions de atexit sont appelées
 //
+//-----------------------------------------------------------------------------
 // 2) sortie normale
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 2
+//    
+//    destructeur (a)
+//    destructeur (b)
+//    appel de exit no 2
+//    appel de exit no 1
+//
 //    => les 2 destructeurs sont appelés
 //    => les fonctions de atexit sont appelées
 //
+//-----------------------------------------------------------------------------
 // 3) Semblerait que, en C++, les destructeurs des objets alloués automatiquement
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 3
+//    
+//    destructeur (b)
+//    appel de exit no 2
+//    appel de exit no 1
 //    ne soient pas appelés comme affirmé sur le slide
+//
 //    => seul le destructeur de b (static) est appelé
 //    => les fonctions de atexit sont appelées
 //
+//-----------------------------------------------------------------------------
 // 4) le "int" est obligatoire pour la compilation
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 4
+//    
+//    votre choix : 
+//
 //    une simple fonction qui retourne la valeur
 //    EXIT_SUCCESS => pas de terminaison
 //    => ne quite pas le programme
 //
+//-----------------------------------------------------------------------------
 // 5) comme le return EXIT_SUCCESS mais depuis une fonction
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 5
+//    
+//    destructeur (b)
+//    appel de exit no 2
+//    appel de exit no 1
+//
 //    => ailleurs que dans la fonction main
 //    => seul le destructeur de b (static) est appelé
 //    => les fonctions de atexit sont appelées
 //
+//-----------------------------------------------------------------------------
 // 6) quick_exit ne semble pas dispo sur mon Mac ?
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 6
+//    
 //    https://stackoverflow.com/questions/36825196/quick-exit-not-available
 //
+//-----------------------------------------------------------------------------
 // 7) sortie immédiate
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 7
+//    
 //    => aucun destructeur n'est appelé
 //    => les fonctions de atexit sont PAS appelées
 //
+//-----------------------------------------------------------------------------
 // 8) une exception n'est pas traitée
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 8
+//    
+//    appel de terminate
+//    libc++abi: terminate_handler unexpectedly returned
+//    Abort trap: 6
+//
 //    => les fonctions de setTerminate sont appelées
+//
+//-----------------------------------------------------------------------------
 // [[noreturn]]
 // The noreturn attribute is supposed to be used for functions that don't return to the caller.
 // That doesn't mean void functions (which do return to the caller - they just don't return a value),
