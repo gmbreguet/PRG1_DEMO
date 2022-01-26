@@ -114,7 +114,7 @@ int main () {
 //-----------------------------------------------------------------------------
 // Résultats et commentaires ...
 //-----------------------------------------------------------------------------
-// 1) sortie normale
+// 1) sortie EXIT_SUCCESS
 //-----------------------------------------------------------------------------
 //    constructeur (a)
 //    constructeur (b)
@@ -129,7 +129,7 @@ int main () {
 //    => les fonctions de atexit sont appelées
 //
 //-----------------------------------------------------------------------------
-// 2) sortie normale
+// 2) sortie EXIT_FAILURE
 //-----------------------------------------------------------------------------
 //    constructeur (a)
 //    constructeur (b)
@@ -144,7 +144,7 @@ int main () {
 //    => les fonctions de atexit sont appelées
 //
 //-----------------------------------------------------------------------------
-// 3) Semblerait que, en C++, les destructeurs des objets alloués automatiquement
+// 3) exit(2)
 //-----------------------------------------------------------------------------
 //    constructeur (a)
 //    constructeur (b)
@@ -153,13 +153,15 @@ int main () {
 //    destructeur (b)
 //    appel de exit no 2
 //    appel de exit no 1
+//
+//    Semblerait que, en C++, les destructeurs des objets alloués automatiquement
 //    ne soient pas appelés comme affirmé sur le slide
 //
 //    => seul le destructeur de b (static) est appelé
 //    => les fonctions de atexit sont appelées
 //
 //-----------------------------------------------------------------------------
-// 4) le "int" est obligatoire pour la compilation
+// 4) fonction return EXIT_SUCCESS
 //-----------------------------------------------------------------------------
 //    constructeur (a)
 //    constructeur (b)
@@ -187,12 +189,13 @@ int main () {
 //    => les fonctions de atexit sont appelées
 //
 //-----------------------------------------------------------------------------
-// 6) quick_exit ne semble pas dispo sur mon Mac ?
+// 6) quick_exit
 //-----------------------------------------------------------------------------
 //    constructeur (a)
 //    constructeur (b)
 //    votre choix : 6
-//    
+//
+//    ne semble pas dispo sur mon Mac ?
 //    https://stackoverflow.com/questions/36825196/quick-exit-not-available
 //
 //-----------------------------------------------------------------------------
@@ -223,3 +226,4 @@ int main () {
 // The noreturn attribute is supposed to be used for functions that don't return to the caller.
 // That doesn't mean void functions (which do return to the caller - they just don't return a value),
 // but functions where the control flow will not return to the calling function after the function finishes
+//
