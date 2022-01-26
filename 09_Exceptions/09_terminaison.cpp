@@ -1,8 +1,8 @@
 //---------------------------------------------------------
 // Demo           : 09_Terminaison
 // Fichier        : 09_Terminaison.cpp
+// Version        : 02 2022-01-26
 // Auteur(s)      : BREGUET Guy-Michel
-// Date           : 2021-12-13
 // But            : démontrer la terminaison de programme
 //                  en cas d'exceptions
 // Modifications  :
@@ -92,14 +92,14 @@ int main () {
 
          switch (valeur) {
             // gestion des differents cas
-            case 1 : return EXIT_SUCCESS;    break;   // voir commentaire 1
-            case 2 : return EXIT_FAILURE;    break;   // voir commentaire 2
-            case 3 : exit(2);                break;   // voir commentaire 3
-            case 4 : f_EXIT_SUCCESS();       break;   // voir commentaire 4
-            case 5 : f_exit();               break;   // voir commentaire 5
-            case 6 : f_quick_exit();         break;   // voir commentaire 6
-            case 7 : f_Exit();               break;   // voir commentaire 7
-            case 8 : throw 'a';              break;   // voir commentaire 8
+            case 1 : return EXIT_SUCCESS;    break;
+            case 2 : return EXIT_FAILURE;    break;
+            case 3 : exit(2);                break;
+            case 4 : f_EXIT_SUCCESS();       break;
+            case 5 : f_exit();               break;
+            case 6 : f_quick_exit();         break;
+            case 7 : f_Exit();               break;
+            case 8 : throw 'a';              break;
          }
       }
       
