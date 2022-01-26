@@ -87,11 +87,11 @@ int main () {
 
 // |-----------|-----------------|-----------------|-----------------|
 // | Classe    |  Classe dérivée |  Classe dérivée |  Classe dérivée |
-// | de base   |  Mode public    |  Mode private   |  Mode protected |
+// | de base   |  Mode public    |  Mode protected |  Mode private   |
 // |-----------|-----------------|-----------------|-----------------|
-// | Public    |   Public        |   Private       |   Protected     |
+// | Public    |   Public        |   Protected     |   Private       |
 // |-----------|-----------------|-----------------|-----------------|
-// | Protected |   Protected     |   Private       |   Protected     |
+// | Protected |   Protected     |   Protected     |   Private       |
 // |-----------|-----------------|-----------------|-----------------|
 // | Private   |   Non hérité    |   Non hérité    |   Non hérité    |
 // |-----------|-----------------|-----------------|-----------------|
