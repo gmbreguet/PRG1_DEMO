@@ -51,8 +51,7 @@ private:
 //-------------------------------------------------
 // constructeur utilisant le constructeur de Point
 PointCouleur::PointCouleur(int x, int y, short c)
-: Point(x, y)                 // construction d'un point
-{
+: Point(x, y) {               // construction d'un point
    this->c = c;               // ajout de la couleur
 }
 
@@ -86,6 +85,18 @@ int main () {
    return EXIT_SUCCESS;
 }
 
+// |-----------|-----------------|-----------------|-----------------|
+// | Classe    |  Classe dérivée |  Classe dérivée |  Classe dérivée |
+// | de base   |  Mode public    |  Mode private   |  Mode protected |
+// |-----------|-----------------|-----------------|-----------------|
+// | Private   |   Non hérité    |   Non hérité    |   Non hérité    |
+// |-----------|-----------------|-----------------|-----------------|
+// | Protected |   Protected     |   Private       |   Protected     |
+// |-----------|-----------------|-----------------|-----------------|
+// | Public    |   Public        |   Private       |   Protected     |
+// |-----------|-----------------|-----------------|-----------------|
+
+// Résultat
 //    (1, 2)
 //    (1, 2) c:3
 
