@@ -66,12 +66,12 @@ int main () {
    //--------------------------
    // branchement des handlers
    //--------------------------
-   // procedure appelee apres une sortie "exit"
+   // procédure(s) appelée(s) après une sortie "exit"
    atexit(onExit1);                 // utilisation de onExit
    atexit(onExit2);                 // utilisation de onExit
 
    //--------------------------
-   // procedure appelee lorsqu'une exception n'est pas traitee
+   // procédure appelée lorsqu'une exception n'est pas traitée
    // une seule fonction peut être appelée
    set_terminate(onTerminate);      // utilisation de onTerminate
 
@@ -112,6 +112,8 @@ int main () {
 
 //-----------------------------------------------------------------------------
 // Résultats et commentaires ...
+// le programme est relancé à chaque fois ...
+//
 //-----------------------------------------------------------------------------
 // 1) sortie EXIT_SUCCESS
 //-----------------------------------------------------------------------------
