@@ -35,7 +35,6 @@ int f_EXIT_SUCCESS() {
 }
 
 //-------------------------------------------------
-// voir commentaire no 4
 [[noreturn]] void f_quick_exit() {
 //   quick_exit(EXIT_SUCCESS);
    _Exit(EXIT_SUCCESS);
