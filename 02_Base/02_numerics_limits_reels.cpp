@@ -38,3 +38,18 @@ int main() {
    return EXIT_SUCCESS;
 }
 
+//    digits         24
+//    digits10       6
+//    max_digits10   9
+//    min_exponent10 -37
+//    max_exponent10 38
+//    espilon        1.19209e-07
+//    
+//    digits         53
+//    digits10       15
+//    max_digits10   17
+//    min_exponent10 -307
+//    max_exponent10 308
+//    espilon        2.22045e-16
+//    1.19999999999999995559
+//    1.19999999999999995559e+00
