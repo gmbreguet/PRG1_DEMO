@@ -1,10 +1,9 @@
 //---------------------------------------------------------
 // Demo           : 09_Terminaison
 // Fichier        : 09_Terminaison.cpp
-// Version        : 02 2022-01-26
+// Version        : 03 2022-02-05
 // Auteur(s)      : BREGUET Guy-Michel
 // But            : démontrer la terminaison de programme
-//                  en cas d'exceptions
 // Modifications  :
 // Remarque(s)    : NILL
 //---------------------------------------------------------
@@ -99,6 +98,7 @@ int main () {
             case 6 : f_quick_exit();         break;
             case 7 : f_Exit();               break;
             case 8 : throw 'a';              break;
+            case 9 : abort();                break;
          }
       }
       
@@ -223,6 +223,15 @@ int main () {
 //    => la fonction de setTerminate est appelée
 //    NB : une seule fonction est possible
 //
+///-----------------------------------------------------------------------------
+// 8) un abort() est lancé
+//-----------------------------------------------------------------------------
+//    constructeur (a)
+//    constructeur (b)
+//    votre choix : 8
+//    
+//    Aborted
+/
 //-----------------------------------------------------------------------------
 // [[noreturn]]
 // The noreturn attribute is supposed to be used for functions that don't return to the caller.
